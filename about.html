@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    
+
+
+     <!-- Header -->
+
+     <header id="headSection">
+
+        <a onclick="homePage()"  href="index.html"><img id="yrHeaderLogo" src="images/yrLogoDark.png" alt="logo"></a>
+  
+          <nav id="ulList">
+            <ul>
+              <li><a  id="liDefault"  href="index.html">Home</a></li>
+              <li><a id="liOne" href="about.html">About Us</a></li>
+              <li class="resources"> 
+                <a id="liTwo"  href="#">Program</a> 
+                <ul>
+                  <li ><a href="programsDPR.html">Drug Policy Reform</a></li>
+                  <li><a href="programHealth.html">Health</a></li>
+                  <li><a href="programsYEMP.html">Youth Empowerment</a></li>
+                  <li><a href="programResearch.html">Research</a></li>
+                </ul>
+              </li>
+              <li class="resources"> 
+                <a id="liThree"  href="#">Resources</a>
+                <ul>
+                  <li><a href="annualReport.html">Annual Report</a></li>
+                  <li><a href="publications.html">Publications</a></li>
+                </ul>
+              </li>
+              <li><a id="liFour"  href="campaigns.html">Campaigns</a></li>
+              <li><a id="liFive"  href="careers.html">Careers</a></li>
+              <li><a id="liSix"  href="blog.html">Blog</a></li>
+            </ul>
+          </nav>
+  
+         <button id="nav" onclick="openNavBar()"><img id="navImage" src="images/hamburgerDark.png" alt=""></button> 
+
+       <button id="navAlpha" onclick="closeNavBar()"><img id="navImageOne" src="images/cancel.png" alt=""></button> 
+      </header>
+
+
+
+
+ 
+    <section id="about" class="about">
+
+        <div class="aboutUs">
+          <h1>About Us</h1>
+          <p>
+            YouthRISE Nigeria is an advocacy and service based organization with a mandate to promote human rights, access to quality healthcare, harm reduction, social justice and development for young people especially those vulnerable to drug use. Through strategic engagement with stakeholders and communities, we continue to champion drug policy reform and ensure better health outcomes for underserved communities. We are a recipient of the UNAIDS Red Ribbon Award. <br>
+  
+            <h2>
+              YouthRISE Nigeria has special consultative status with the United Nations Economic and Social Council (ECOSOC).
+            </h2>
+          </p>
+        </div>
+  
+        <div class="highlights">
+          <h1> Highlights <span>Select year to view content</span></h1>
+  
+          <div id="highlightContainer" class="highlightContainer">
+            <div class="highlightYear">
+              <select name="highlightYear" id="highlightYear" onchange="updateHighlight()">
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+              </select>
+  
+              <img src="images/liDropdown.png" alt="">
+            </div>
+  
+            <div class="highlightContent">
+              <p id="dynamicHighlight">Scale-up of Harm Reduction Program. Launch of YouthRISE Africa.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="history">
+          <div class="historyText">
+            <h1>History</h1>
+            <p>
+              YouthRISE Nigeria is borne in response to the growing drug use and the incidence of HIV among people who use/inject drugs in Nigeria. The founding Executive Director, who was the African representative of the YouthRISE International Working group on drug use and involved in Global Fund HIV programmes in Nigeria, felt that the specific response to the epidemic driven by drug use was not being adequately addressed. <br> <br>
+              To this end, YouthRISE Nigeria organized a multi-stakeholder meeting in Abuja in August 2010, themed-Drug use and HIV: “A need for comprehensive response”, the first of its kind in Nigeria and as such generated a lot of interest not just in Nigeria but in the sub-region.  The call for implementation of the Comprehensive Harm Reduction program in Nigeria and the need for sustained advocacy in this respect were key recommendations from the meeting. <br>
+              YouthRISE Nigeria began light operation in 2012 and was formalized under a fiscal host to provide administrative and legal operational support for the organization before its legal incorporation in 2014. <br> <br>
+              YouthRISE Nigeria, since its inception, has been at the forefront of advocating for evidence-based policies and programs including harm reduction for people who use drugs, engaging critical stakeholders to drive drug policy reform, improve HIV services, and galvanizing CSO actions in this regard. One of the initial documented pieces of evidence of our work was the publication of the first national report on the impact of the Nigerian drug policy on the health and human rights of young people who use drugs. YouthRISE Nigeria also facilitated the formation of drug user groups & networks in Nigeria.
+            </p>
+          </div>
+
+          <div class="historyVideo">
+            <video  src="videos/videoplayback.mp4" width="640" height="360" controls poster="images/aboutVideoBg.png"> </video>
+          </div>
+        </div>
+
+        <div class="boardMembers">
+          <h1> <span>Board</span> Members</h1>
+
+          <div class="membersContainer">
+
+            <!-- Adeolu Adebiyi -->
+            <div class="membersCard" id="adeolu">
+              <h3>
+                Adeolu Adebiyi
+              </h3>
+            </div>
+
+            <!-- Sylvia Adebajo -->
+            <div class="membersCard" id="Sylvia">
+              <h3>
+                Sylvia Adebajo
+              </h3>
+            </div>
+
+             <!-- Professor Isidore Obot -->
+             <div class="membersCard" id="Isidore">
+              <h3>               
+                Professor Isidore Obot
+              </h3>
+            </div>
+
+             <!-- Lolade Abiodun -->
+             <div class="membersCard" id="Lolade">
+              <h3>               
+                Lolade Abiodun
+              </h3>
+            </div>
+
+             <!-- Victoria Ekechukwu -->
+             <div class="membersCard" id="Victoria">
+              <h3>
+                Victoria Ekechukwu
+              </h3>
+            </div>
+
+             <!-- Babayemi Peter -->
+             <div class="membersCard" id="Peter">
+              <h3>
+                Babayemi Peter
+              </h3>
+            </div>
+
+             <!-- Alban Anonyuo -->
+             <div class="membersCard" id="Alban">
+              <h3>
+                Alban Anonyuo
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="missionAndVision">
+          <div class="mands">
+            <h1><span>Our</span> Mission</h1>
+            <p>
+              YouthRISE Nigeria envisions an initiative with a mission to promote evidence-based policies and development, with the meaningful involvement of young people and most affected communities.
+            </p>
+          </div>
+
+          <div class="mands">
+            <h1><span>Our</span> Vision</h1>
+            <p>
+              YouthRISE Nigeria envisions a society where the health, human rights and development of every young person in Nigeria is promoted and protected
+            </p>
+          </div>
+        </div>
+  
+      </section>
+
+
+      <footer>
+        <div class="footerTop">
+         <div class="footerImg">
+          <img src="images/yrFooterLogo.png" alt="">
+         </div>
+  
+          <div class="footerContact">
+            <h1> Contact: <br>
+              <span>PLOT NO.1716 CADASTRAL ZONE B11 <br>
+                KAURA DISTRICT FCT. ABUJA
+            </span></h1>
+  
+            <h1> Email Address: <br>
+              <span>nigeria@youthriseng.org
+            </span></h1>
+            <h1> Phone Number: <br>
+              <span>09045646031
+            </span></h1>
+          </div>
+  
+          <div class="footerPrograms">
+            <h1>Programes</h1>
+           <a href="programsDPR.html">Drug Policy Reform</a>
+            <a href="programHealth.html">Health</a>
+            <a href="programResearch.html">Research</a>
+            <a href="programsYEMP.html">Youth Empowerment</a>
+          </div>
+  
+          <form action="">
+            <label for="">Subscribe to Our Newsletter!</label>
+            <p>Stay in the loop! Receive exclusive updates, promotions, and insider content. Join our community</p>
+            <input type="email" name="email" id="email" required placeholder="enter your email"> 
+            <input type="submit" value="Subscribe" id="footerSubmit">
+          </form>
+        </div>
+  
+        <!-- <div class="footerButtom">
+          <h3>@YouthRISE - 2024</h3>
+          <div class="footerSocials">
+            <img src="images/youtube-2.png" alt="">
+            <img src="images/twitter-3.png" alt="">
+            <img src="images/instagram-3.png" alt="">
+          </div> -->
+        </div>
+      </footer>
+
+
+
+
+
+
+     <script src="aboutNav.js"></script>
+     <script src="partnersSlide.js"></script>
+</body>
+</html>
