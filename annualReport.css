@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,900;1,100;1,200;1,300;1,500;1,900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/arcon');
+
+                
+
+@font-face {
+    font-family: "AvenirBlack";
+    src: url(Fonts/AvenirLBlack.otf);
+}
+@font-face {
+    font-family: "AvenirBook";
+    src: url(Fonts/AvenirLBook.otf);
+}
+@font-face {
+    font-family: "AvenirRoman";
+    src: url(Fonts/AvenirLRoman.otf);
+}
+
+@font-face {
+    font-family: "AvenirLight";
+    src: url(Fonts/AvenirLight.ttf);
+}
+
+@font-face {
+    font-family: "AvenirHeavy";
+    src: url(Fonts/Avenir\ Heavy.ttf);
+}
+
+@font-face {
+    font-family: "ArconRegular";
+    src: url(Fonts/ArconRegular.otf);
+}
+
+@font-face {
+    font-family: "ArconRegularRounded";
+    src: url(Fonts/ArconRoundedRegular.otf);
+}
+
+@font-face {
+    font-family: "MiyakeRegular";
+    src: url(Fonts/miyakeregular.otf);
+}
+
+:root{
+    --lightGreen: #13f759;
+    --darkGreen: #050b0a;
+    --grayAuto: #51645d;
+    --defaultWhite: #f7fffe;
+    --AuxilaryWhite: #e5f6f4;
+    --GrayGreen: #068a1c;
+    --auxGreen: #001a16;
+}
+
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: var(--Book);
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    color: var(--darkGreen);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 4vh 5%;
+  position: absolute;
+  width: 90%;
+  color: var(--darkGreen);
+  z-index: 3;
+}
+
+header img{
+  max-width: 15vw;
+  height: auto;
+}
+
+body{
+    background: var(--AuxilaryWhite);
+}
+
+
+
+
+header  ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header  ul li {
+  margin-left: 2rem;
+  font-size: 1.1vw;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header  ul li a {
+  text-decoration: none;
+  color: var(--darkGreen);
+}
+
+header  ul li.resources:hover ul {
+  display: block;
+}
+
+.resources {
+  display: flex;
+  align-items: baseline;
+  justify-content:center;
+}
+
+
+header  ul li ul {
+  display: none;
+  position: absolute;
+  background-color: var(--grayAuto);
+  border-radius: 0 0 4px 4px;
+  padding: .5vh 0;
+  margin-top: 2.5vh;
+}
+
+header  ul li ul li {
+  display: block;
+  min-width: 160px;
+  padding: 1vh 0;
+  margin: 0;
+  font-size: .9vw;
+}
+
+header  ul li ul li a {
+  padding: 10px;
+  text-align: left;
+  color: var(--AuxilaryWhite);
+}
+
+
+body{
+  color: var(--defaultWhite);
+  
+}
+
+
+#nav{
+    display: none;
+}
+  
+#navAlpha{
+    display: none;
+}
+
+
+.annualReport{
+  display: flex;
+  flex-direction: column;
+  color: var(--darkGreen);
+}
+
+.reportTop{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12% 5vw 4% 5vw;
+}
+
+.reportTop h1{
+  font-size: 5vw;
+  font-weight: 800;
+  font-family: "AvenirHeavy";
+  line-height: 5.5vw;
+}
+
+.reportTop h1 span{
+  font-size: 5vw;
+  font-weight: 300;
+  font-family: "AvenirRoman";
+}
+
+
+.reportTopText{
+  width: 40%;
+}
+
+.reportTopTextTag{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .8vw;
+  border-radius: 5rem;
+  background: var(--GrayGreen);
+  width: 50%;
+  margin-bottom: 2vw;
+}
+
+.reportTextTopTextTagButton{
+  height: .7vw;
+  width: .7vw;
+  background: var(--defaultWhite);
+  border-radius: 5rem;
+  margin-right: 2vw;
+}
+
+.reportTopTextTag h6{
+  font-size: .8vw;
+  font-weight: 500;
+  font-family: "AvenirRoman";
+  color: var(--AuxilaryWhite);
+}
+
+.reportTopText p{
+  font-size: 1.3vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  margin-bottom: 1vw;
+}
+
+.reportTopText h4{
+  font-size: 1.7vw;
+  font-weight: 600;
+  font-family: "AvenirHeavy";
+}
+
+
+.reportButtom{
+  background: var(--darkGreen);
+  color: var(--AuxilaryWhite);
+  padding: 4% 5vw 4% 5vw;
+  margin-top: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  scroll-behavior: smooth;
+  overflow: scroll;
+}
+
+.reportButtom::-webkit-scrollbar{
+  width: 4px;
+  scrollbar-width: thin;
+}
+
+.reportButtom::-webkit-scrollbar-track{
+  background-color: var(--darkGreen);
+}
+
+.reportButtom::-webkit-scrollbar-thumb{
+  background-color: var(--grayAuto);
+  border-radius: 10px;
+  scrollbar-width: thin;
+}
+
+#arOne{
+  background-image: url(images/AR2018.png);
+  background-position: center;
+  background-size: cover;
+}
+
+
+.reportContent{
+  display: flex;
+  flex-direction: column;
+  min-width: 25vw;
+  background: var(--auxGreen);
+  margin-right: 3vw;
+  padding: 5vw 2vw 2vw 2vw;
+  border-radius: .2rem;
+  height: 310px;
+}
+
+.reportContent h1{
+  font-size: 3vw;
+  font-weight: 800;
+  font-family: "AvenirHeavy";
+  margin-bottom: .7vw;
+}
+
+.reportContent p{
+  font-size: 1vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  margin-bottom: .7vw;
+}
+
+.reportContent a{
+  width: 100%;
+}
+
+.reportContent button{
+  width: 60%;
+  margin-top: 1vw;
+  border: 0;
+  background: var(--GrayGreen);
+  color: var(--AuxilaryWhite);
+  font-size: 1.3vw;
+  font-weight: 500;
+  font-family: "AvenirHeavy";
+  padding: .3vw 1.5vw;
+  border-radius: .2rem;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+
+    header{
+      display: flex;
+      align-items: center;
+      justify-content: none;
+      margin: 0;
+      padding: 4vh 7vw;
+      position: absolute;
+      width: 85%;
+      z-index: 999;
+    }
+    
+    header img{
+      max-width: 27vw;
+      height: auto;
+      position: absolute;
+      top: 0;
+      margin-top: 5vh;
+    }
+    
+    
+    nav{
+      display: none;
+    }
+    
+    header  ul {
+      list-style: none;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      margin-left: 8vh;
+    }
+    
+    header  ul li {
+      margin-left: 2.5rem;
+      margin-bottom: 4vh;
+      font-size: 4vw;
+      font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header  ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    header  ul li.resources:hover ul {
+      display: block;
+    }
+    
+    .resources {
+      display: flex;
+      align-items: baseline;
+      justify-content:center;
+    }
+    
+    
+    header  ul li ul {
+      display: none;
+      position: absolute;
+      background-color: var(--grayAuto);
+      border-radius: 0 0 4px 4px;
+      padding: .5vh 0;
+      margin-top: 2.5vh;
+    }
+    
+    header  ul li ul li {
+      display: block;
+      min-width: 160px;
+      padding: 1vh 0;
+      margin: 0;
+      font-size: 2.2vw;
+    }
+    
+    header  ul li ul li a {
+      padding: 10px;
+      text-align: left;
+    }
+    
+    
+    body{
+      color: var(--defaultWhite);
+    }
+    
+    #nav{
+      display: block;
+      border: 0;
+      background: 0;
+      cursor: pointer;
+      margin-right: 4vw;
+    }
+  
+    #navAlpha{
+      display: none;
+      border: 0;
+      background: 0;
+      cursor: pointer;
+      margin-right: 4vw;
+    }
+    
+  
+    #nav img{
+      max-width: 6vw;
+      height: auto;
+    }
+  
+    #navAlpha img{
+      max-width: 6vw;
+      height: auto;
+    }
+
+
+
+
+    .annualReport{
+      display: flex;
+      flex-direction: column;
+      color: var(--darkGreen);
+    }
+    
+    .reportTop{
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: space-between;
+      padding: 25% 8vw 4% 8vw;
+    }
+    
+    .reportTop h1{
+      font-size: 10vw;
+      font-weight: 800;
+      font-family: "AvenirHeavy";
+      line-height: 9.5vw;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 2vh;
+    }
+    
+    .reportTop h1 span{
+      font-size: 10vw;
+      font-weight: 300;
+      font-family: "AvenirRoman";
+    }
+    
+    
+    .reportTopText{
+      width: 100%;
+      margin-top: 4vh;
+    }
+    
+    .reportTopTextTag{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2.4vw;
+      border-radius: 5rem;
+      background: var(--GrayGreen);
+      width: 50%;
+      margin-bottom: 3vw;
+    }
+    
+    .reportTextTopTextTagButton{
+      height: 2vw;
+      width: 2vw;
+      background: var(--defaultWhite);
+      border-radius: 5rem;
+      margin-right: 3vw;
+    }
+    
+    .reportTopTextTag h6{
+      font-size: 2.2vw;
+      font-weight: 500;
+      font-family: "AvenirRoman";
+      color: var(--AuxilaryWhite);
+    }
+    
+    .reportTopText p{
+      font-size: 2.5vw;
+      font-weight: 400;
+      font-family: "AvenirRoman";
+      margin-bottom: 1vw;
+  
+    }
+    
+    .reportTopText h4{
+      font-size: 3.2vw;
+      font-weight: 600;
+      font-family: "AvenirHeavy";
+    }
+    
+    
+    .reportButtom{
+      background: var(--darkGreen);
+      color: var(--AuxilaryWhite);
+      padding: 4% 5vw 4% 5vw;
+      margin-top: 2vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      scroll-behavior: smooth;
+      overflow: scroll;
+      flex-wrap: wrap;
+    }
+    
+    .reportButtom::-webkit-scrollbar{
+      display: none;
+    }
+    
+    
+    .reportContent{
+      display: flex;
+      flex-direction: column;
+      min-width: 35vw;
+      background: var(--auxGreen);
+      margin: 3vh 0 3vh 0;
+      padding: 14vw 6vw 6vw 6vw;
+      border-radius: .2rem;
+    }
+    
+    .reportContent h1{
+      font-size: 8.5vw;
+      font-weight: 800;
+      font-family: "AvenirHeavy";
+      margin-bottom: 3vw;
+    }
+    
+    .reportContent p{
+      font-size: 2.9vw;
+      font-weight: 400;
+      font-family: "AvenirRoman";
+      margin-bottom: 3vw;
+    }
+    
+    .reportContent button{
+      width: 35%;
+      margin-top: 1vw;
+      border: 0;
+      background: var(--GrayGreen);
+      color: var(--AuxilaryWhite);
+      font-size: 3.5vw;
+      font-weight: 500;
+      font-family: "AvenirHeavy";
+      padding: .3vw 1.5vw;
+      border-radius: .2rem;
+      cursor: pointer;
+    }
+}

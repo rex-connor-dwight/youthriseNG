@@ -1,0 +1,57 @@
+:root{
+    --lightGreen: #13f759;
+    --darkGreen: #050b0a;
+    --grayAuto: #51645d;
+    --defaultWhite: #f7fffe;
+    --AuxilaryWhite: #e5f6f4;
+    --GrayGreen: #068a1c;
+    --auxGreen: #001a16;
+}
+
+body{
+    background: #e5f6f4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.previewCTA{
+    width: 80%;
+    margin: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+}
+
+.previewButton{
+    background: var(--GrayGreen);
+    color: var(--AuxilaryWhite);
+    border: 0;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 9px;
+    border-radius: 3px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.previewLoop{
+    padding: 20px 20px;
+    width: 50%;
+}
+
+.previewLoop img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 600px){
+    .previewLoop{
+        padding: 70px 20px;
+        width: 100%;
+    }
+}

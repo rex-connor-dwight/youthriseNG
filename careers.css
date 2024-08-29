@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,900;1,100;1,200;1,300;1,500;1,900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/arcon');
+
+                
+
+@font-face {
+    font-family: "AvenirBlack";
+    src: url(Fonts/AvenirLBlack.otf);
+}
+@font-face {
+    font-family: "AvenirBook";
+    src: url(Fonts/AvenirLBook.otf);
+}
+@font-face {
+    font-family: "AvenirRoman";
+    src: url(Fonts/AvenirLRoman.otf);
+}
+
+@font-face {
+    font-family: "AvenirLight";
+    src: url(Fonts/AvenirLight.ttf);
+}
+
+@font-face {
+    font-family: "AvenirHeavy";
+    src: url(Fonts/Avenir\ Heavy.ttf);
+}
+
+@font-face {
+    font-family: "ArconRegular";
+    src: url(Fonts/ArconRegular.otf);
+}
+
+@font-face {
+    font-family: "ArconRegularRounded";
+    src: url(Fonts/ArconRoundedRegular.otf);
+}
+
+@font-face {
+    font-family: "MiyakeRegular";
+    src: url(Fonts/miyakeregular.otf);
+}
+
+:root{
+    --lightGreen: #13f759;
+    --darkGreen: #050b0a;
+    --grayAuto: #888b8b;
+    --defaultWhite: #f7fffe;
+    --AuxilaryWhite: #e5f6f4;
+    --GrayGreen: #068a1c;
+    --auxGreen: #001a16;
+  
+}
+
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: var(--Book);
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    color: var(--darkGreen);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 4vh 5%;
+  position: absolute;
+  width: 90%;
+  color: var(--darkGreen);
+  z-index: 3;
+}
+
+header img{
+  max-width: 15vw;
+  height: auto;
+}
+
+body{
+    background: var(--AuxilaryWhite);
+}
+
+
+
+
+header  ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header  ul li {
+  margin-left: 2rem;
+  font-size: 1.1vw;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header  ul li a {
+  text-decoration: none;
+  color: var(--darkGreen);
+}
+
+header  ul li.resources:hover ul {
+  display: block;
+}
+
+.resources {
+  display: flex;
+  align-items: baseline;
+  justify-content:center;
+}
+
+
+header  ul li ul {
+  display: none;
+  position: absolute;
+  background-color: var(--grayAuto);
+  border-radius: 0 0 4px 4px;
+  padding: .5vh 0;
+  margin-top: 2.5vh;
+}
+
+header  ul li ul li {
+  display: block;
+  min-width: 160px;
+  padding: 1vh 0;
+  margin: 0;
+  font-size: .9vw;
+}
+
+header  ul li ul li a {
+  padding: 10px;
+  text-align: left;
+  color: var(--AuxilaryWhite);
+}
+
+
+body{
+  color: var(--defaultWhite);
+  
+}
+
+
+#nav{
+    display: none;
+}
+  
+#navAlpha{
+    display: none;
+}
+
+
+
+.careers{
+    display: flex;
+    flex-direction: column;
+    color: var(--darkGreen);
+    padding: 13% 0 4% 0;
+}
+
+.careerTopBanner{
+    background-image: url(images/careerTop.png);
+    background-position: center;
+    background-size: cover;
+    padding: 65px 0;
+}
+
+.careerTop h1{
+    font-size: 5vw;
+    font-weight: 500;
+    font-family: "AvenirHeavy";
+    text-align: center;
+    color: var(--lightGreen);
+}
+
+.careerTop p{
+    font-size: 1.3vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    text-align: center;
+    padding: 0 15vw;
+    color: var(--AuxilaryWhite);
+}
+
+.careerTop h2{
+    font-size: 3vw;
+    font-weight: 600;
+    font-family: "AvenirHeavy";
+    margin-top: 10%;
+    margin: 80px 12vw 0% 12vw;
+}
+
+.careerTop h3{
+    font-size: 1.3vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    margin: 1vh 0 5vh 0;
+    margin: 0% 12vw 0% 12vw;
+}
+
+
+.careersContainer{
+    margin: 4vh 0 0% 0;
+    background: var(--darkGreen);
+    color: var(--AuxilaryWhite);
+    padding:  1vw 2vw;
+    border-radius: .3rem;
+    margin: 0% 12vw 0% 12vw;
+}
+
+.careersContainerOne{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.careersContainerOne h4{
+    font-size: 2.5vw;
+    font-weight: 400;
+    font-family: "AvenirHeavy";
+}
+
+.careersContainerOne img{
+    max-width: 2vw;
+    height: 1vw;
+}
+
+.jobOne{
+    display: none;
+}
+
+.jobTwo{
+    display: none;
+}
+
+
+.careerPosition{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3vh 0 6vh 0;
+}
+
+.jobTag h5{
+    font-size: 1.7vw;
+    font-weight: 400;
+    font-family: "AvenirHeavy";
+}
+
+.jobTag h6{
+    font-size: 1.4vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    color: var(--grayAuto);
+}
+
+.careerPosition button{
+    border: var(--AuxilaryWhite) solid .1rem;
+    background: 0;
+    color: var(--AuxilaryWhite);
+    padding: .8vw 4vw;
+    border-radius: 5rem;
+    font-size: 1vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    cursor: pointer;
+    margin-right: 1vw;
+}
+
+.jobDescription{
+    margin-bottom: 9vh;
+}
+
+.jobDescriptionNumbring{
+    display: block;
+    padding: 1.5vh 0;
+}
+
+
+
+
+.jobDescriptionNumbring p{
+    width: auto;
+    font-size: 1.3vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+}
+
+.jobOutline{
+    width: auto;
+    margin-top: 20px ;
+    color: var(--lightGreen);
+    font-size: 24px;
+}
+
+.mailto{
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.mailto span{
+    color: var(--lightGreen);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+
+    header{
+      display: flex;
+      align-items: center;
+      justify-content: none;
+      margin: 0;
+      padding: 4vh 7vw;
+      position: absolute;
+      width: 85%;
+      z-index: 999;
+    }
+    
+    header img{
+      max-width: 27vw;
+      height: auto;
+      position: absolute;
+      top: 0;
+      margin-top: 5vh;
+    }
+    
+    
+    nav{
+      display: none;
+    }
+    
+    header  ul {
+      list-style: none;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      margin-left: 8vh;
+    }
+    
+    header  ul li {
+      margin-left: 2.5rem;
+      margin-bottom: 4vh;
+      font-size: 4vw;
+      font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header  ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    header  ul li.resources:hover ul {
+      display: block;
+    }
+    
+    .resources {
+      display: flex;
+      align-items: baseline;
+      justify-content:center;
+    }
+    
+    
+    header  ul li ul {
+      display: none;
+      position: absolute;
+      background-color: var(--grayAuto);
+      border-radius: 0 0 4px 4px;
+      padding: .5vh 0;
+      margin-top: 2.5vh;
+    }
+    
+    header  ul li ul li {
+      display: block;
+      min-width: 160px;
+      padding: 1vh 0;
+      margin: 0;
+      font-size: 2.2vw;
+    }
+    
+    header  ul li ul li a {
+      padding: 10px;
+      text-align: left;
+    }
+    
+    
+    body{
+      color: var(--defaultWhite);
+    }
+    
+    #nav{
+      display: block;
+      border: 0;
+      background: 0;
+      cursor: pointer;
+      margin-right: 4vw;
+    }
+  
+    #navAlpha{
+      display: none;
+      border: 0;
+      background: 0;
+      cursor: pointer;
+      margin-right: 4vw;
+    }
+    
+  
+    #nav img{
+      max-width: 6vw;
+      height: auto;
+    }
+  
+    #navAlpha img{
+      max-width: 6vw;
+      height: auto;
+    }
+
+
+    .careers{
+        display: flex;
+        flex-direction: column;
+        color: var(--darkGreen);
+        /* padding: 30% 5vw 4% 5vw; */
+    }
+
+    .careerTopBanner{
+        padding: 65px 0;
+        margin-top: 40px;
+    }
+    
+    .careerTop h1{
+        font-size: 11vw;
+        font-weight: 500;
+        font-family: "AvenirHeavy";
+        text-align: left;
+        padding-left: 20px;
+    }
+    
+    .careerTop p{
+        font-size: 3.2vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        text-align: left;
+        padding: 0 0vw;
+    }
+    
+    .careerTop h2{
+        font-size: 5.5vw;
+        font-weight: 600;
+        font-family: "AvenirHeavy";
+        padding: 8% 5vw 5px 5vw;
+        margin: 0
+    }
+    
+    .careerTop h3{
+        font-size: 3.2vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        margin: .6vh 0 0 0;
+    }
+    
+    
+    .careersContainer{
+        margin: 2vh 0 0% 0;
+        background: var(--darkGreen);
+        color: var(--AuxilaryWhite);
+        padding:  1.5vw 3vw;
+        border-radius: .3rem;
+        margin: 0% 5vw 0% 5vw;
+    }
+    
+    .careersContainerOne{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    
+    .careersContainerOne h4{
+        font-size: 4.5vw;
+        font-weight: 400;
+        font-family: "AvenirHeavy";
+    }
+    
+    .careersContainerOne img{
+        max-width: 4vw;
+        height: 2.5vw;
+    }
+    
+    .jobOne{
+        display: none;
+    }
+
+    .jobTwo{
+        display: none;
+    }
+
+    
+    
+    .careerPosition{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 3vh 0 3vh 0;
+    }
+    
+    .jobTag h5{
+        font-size: 3.5vw;
+        font-weight: 400;
+        font-family: "AvenirHeavy";
+    }
+    
+    .jobTag h6{
+        font-size: 3.2vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        color: var(--grayAuto);
+    }
+    
+    .careerPosition button{
+        border: var(--AuxilaryWhite) solid .1rem;
+        background: 0;
+        color: var(--AuxilaryWhite);
+        padding: 1.5vw 7vw;
+        border-radius: 5rem;
+        font-size: 3vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        cursor: pointer;
+        margin-right: 1vw;
+    }
+    
+    .jobDescription{
+        margin-bottom: 5vh;
+    }
+    
+    .jobDescriptionNumbring{
+        display: block;
+        align-items: center;
+        padding: 1.5vh 0;
+    }
+    
+    .bullet{
+        width: 3vw;
+        height: 1.4vh;
+        background: var(--AuxilaryWhite);
+        border-radius: 5rem;
+    }
+    
+    
+    .jobDescriptionNumbring p{
+        width: auto;
+        font-size: 3vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+    }
+
+    .jobOutline{
+        width: auto;
+        margin-top: 20px ;
+        color: var(--lightGreen);
+        font-size: 16px;
+    }
+
+    
+}

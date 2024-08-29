@@ -1,0 +1,848 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,900;1,100;1,200;1,300;1,500;1,900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/arcon');
+
+                
+
+@font-face {
+    font-family: "AvenirBlack";
+    src: url(Fonts/AvenirLBlack.otf);
+}
+@font-face {
+    font-family: "AvenirBook";
+    src: url(Fonts/AvenirLBook.otf);
+}
+@font-face {
+    font-family: "AvenirRoman";
+    src: url(Fonts/AvenirLRoman.otf);
+}
+
+@font-face {
+    font-family: "AvenirLight";
+    src: url(Fonts/AvenirLight.ttf);
+}
+
+@font-face {
+    font-family: "AvenirHeavy";
+    src: url(Fonts/Avenir\ Heavy.ttf);
+}
+
+@font-face {
+    font-family: "ArconRegular";
+    src: url(Fonts/ArconRegular.otf);
+}
+
+@font-face {
+    font-family: "ArconRegularRounded";
+    src: url(Fonts/ArconRoundedRegular.otf);
+}
+
+@font-face {
+    font-family: "MiyakeRegular";
+    src: url(Fonts/miyakeregular.otf);
+}
+
+:root{
+    --lightGreen: #13f759;
+    --darkGreen: #06100e;
+    --grayAuto: #51645d;
+    --defaultWhite: #f7fffe;
+    --AuxilaryWhite: #e5f6f4;
+    --grayGreen: #068a1c;
+}
+
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: var(--Book);
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    color: var(--darkGreen);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 4vh 5%;
+  position: absolute;
+  width: 90%;
+  color: var(--darkGreen);
+  z-index: 3;
+}
+
+header img{
+  max-width: 15vw;
+  height: auto;
+}
+
+
+
+
+header  ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header  ul li {
+  margin-left: 2rem;
+  font-size: 1.1vw;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header  ul li a {
+  text-decoration: none;
+  color: var(--darkGreen);
+}
+
+header  ul li.resources:hover ul {
+  display: block;
+}
+
+.resources {
+  display: flex;
+  align-items: baseline;
+  justify-content:center;
+}
+
+
+header  ul li ul {
+  display: none;
+  position: absolute;
+  background-color: var(--grayAuto);
+  border-radius: 0 0 4px 4px;
+  padding: .5vh 0;
+  margin-top: 2.5vh;
+}
+
+header  ul li ul li {
+  display: block;
+  min-width: 160px;
+  padding: 1vh 0;
+  margin: 0;
+  font-size: .9vw;
+}
+
+header  ul li ul li a {
+  padding: 10px;
+  text-align: left;
+  color: var(--AuxilaryWhite);
+}
+
+
+body{
+  color: var(--defaultWhite);
+  
+}
+
+
+#nav{
+    display: none;
+}
+  
+#navAlpha{
+    display: none;
+}
+
+
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+    background: var(--AuxilaryWhite);
+    color: var(--darkGreen);
+    padding: 20vh 4vw 0 4vw;
+}
+  
+.aboutUs{
+    background: url(images/aboutUsBg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--AuxilaryWhite);
+    padding: 4vw;
+    border-radius: .1rem;
+}
+  
+.aboutUs h1{
+    color: var(--lightGreen);
+    font-size: 2.5vw;
+    font-weight: 900;
+    font-family: "AvenirRoman";
+    margin-bottom: 3vh;
+}
+  
+.aboutUs p{
+    font-size: 1.3vw;
+    font-weight: 400;
+    font-family: "AvenirBook";
+}
+  
+.aboutUs h2{
+    font-size: 1.3vw;
+    font-weight: 900;
+    font-family: "AvenirRoman";
+    margin-top: 3vh;
+}
+
+
+.highlights{
+    margin: 17vh 0 3vh 0;
+  }
+  
+  .highlights h1{
+    font-size: 1.8vw;
+    font-weight: 900;
+    font-family:  "AvenirRoman";
+  }
+  
+  .highlights h1 span{
+    font-size: 1.2vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    margin-left: 1vw;
+  }
+  
+  .highlightContainer{
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .highlightYear{
+    display: flex;
+    width: 10%;
+    background: var(--darkGreen);
+    color: var(--defaultWhite);
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .highlightYear select{
+    border: 0;
+    background: none;
+    color: var(--AuxilaryWhite);
+    font-size: 1.4vw;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+  }
+  
+  .highlightYear select:focus{
+    outline: none;
+  }
+  
+  .highlightYear  img{
+    max-width: 1vw;
+    height: auto;
+    margin-left: .5vw;
+  }
+  
+  
+  .highlightContent{
+    width: 77%;
+    background: var(--grayAuto);
+    color: var(--defaultWhite);
+    padding: 2.5vh;
+  }
+  
+.highlightContent p{
+    font-size: 1vw;
+    font-weight: 400;
+    font-family: "AvenirBook";
+    height: auto;
+  }
+
+
+.history{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7% 0;
+}
+
+.historyText{
+    width: 60%;
+}
+
+.historyText h1{
+  font-size: 4vw;
+  font-weight: 400;
+  font-family: "AvenirHeavy";
+  margin-bottom: 2vh;
+}
+
+.historyText p{
+  font-size: 1.3vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  padding-right: 5%;
+  text-align: justify;
+}
+
+.historyVideo{
+    width: 40%;
+}
+
+.historyVideo video{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.boardMembers{
+  display: flex;
+  flex-direction: column;
+}
+
+.boardMembers h1{
+  font-size: 4vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  margin-bottom: 2vh;
+}
+
+.boardMembers h1 span{
+  font-size: 4vw;
+  font-weight: 700;
+  font-family: "AvenirHeavy";
+
+}
+
+.membersContainer{
+  display: flex;
+  align-items: center;
+  width: auto;
+  overflow: scroll;
+  height: 45vh;
+  
+}
+
+.membersContainer::-webkit-scrollbar{
+  display: none;
+}
+
+#adeolu{
+  background: url(images/Adeolu.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#Sylvia{
+  background: url(images/Sylvia.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#Isidore{
+  background: url(images/Isidore.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#Lolade{
+  background: url(images/Lolade.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#Victoria{
+  background: url(images/Victoria.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#Peter{
+  background: url(images/Peter.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#Alban{
+  background: url(images/Alban.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.membersCard{
+  min-width: 20%;
+  height: inherit;
+  margin-right: .3vw;
+  border-radius: .2rem;
+  overflow-y: hidden;
+}
+
+.membersCard h3{
+  font-size: 1.1vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  margin-bottom: 2vh;
+  color: var(--AuxilaryWhite);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+}
+
+
+.missionAndVision{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--grayGreen);
+  padding:12vh 4vw;
+  margin: 10vh -4vw 0 -4vw;
+  color: var(--AuxilaryWhite);
+}
+
+.mands{
+  width: 50%;
+}
+
+.mands h1 span{
+  font-weight: 900;
+  font-family: "AvenirHeavy";
+}
+
+.mands h1{
+  font-size: 3vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+}
+
+.mands p{
+  font-size: 1.4vw;
+  padding-right: 4vw;
+  font-weight: 400;
+  font-family: "ArconRegular";
+  margin-top: 2vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+
+    header{
+      display: flex;
+      align-items: center;
+      justify-content: none;
+      margin: 0;
+      padding: 4vh 7vw;
+      position: absolute;
+      width: 85%;
+      height: 92vh;
+      z-index: 2;
+    }
+    
+    header img{
+      max-width: 27vw;
+      height: auto;
+      position: absolute;
+      top: 0;
+      margin-top: 5vh;
+    }
+    
+    
+    nav{
+      display: none;
+    }
+    
+    header  ul {
+      list-style: none;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      margin-left: 8vh;
+    }
+    
+    header  ul li {
+      margin-left: 2.5rem;
+      margin-bottom: 4vh;
+      font-size: 4vw;
+      font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header  ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    header  ul li.resources:hover ul {
+      display: block;
+    }
+    
+    .resources {
+      display: flex;
+      align-items: baseline;
+      justify-content:center;
+    }
+    
+    
+    header  ul li ul {
+      display: none;
+      position: absolute;
+      background-color: var(--grayAuto);
+      border-radius: 0 0 4px 4px;
+      padding: .5vh 0;
+      margin-top: 2.5vh;
+    }
+    
+    header  ul li ul li {
+      display: block;
+      min-width: 160px;
+      padding: 1vh 0;
+      margin: 0;
+      font-size: 2.2vw;
+    }
+    
+    header  ul li ul li a {
+      padding: 10px;
+      text-align: left;
+    }
+    
+    
+    body{
+      color: var(--defaultWhite);
+    }
+    
+    #nav{
+      display: block;
+      border: 0;
+      background: 0;
+      cursor: pointer;
+      margin-right: 4vw;
+    }
+  
+    #navAlpha{
+      display: none;
+      border: 0;
+      background: 0;
+      cursor: pointer;
+      margin-right: 4vw;
+    }
+    
+  
+    #nav img{
+      max-width: 6vw;
+      height: auto;
+    }
+  
+    #navAlpha img{
+      max-width: 6vw;
+      height: auto;
+    }
+
+
+  .about{
+    display: flex;
+    flex-direction: column;
+    background: var(--AuxilaryWhite);
+    color: var(--darkGreen);
+    padding: 14vh 4vw 0vh 4vw;
+  }
+
+  .aboutUs{
+    background: url(images/aboutUsBg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--AuxilaryWhite);
+    padding: 4vw;
+    border-radius: .1rem;
+  }
+
+  .aboutUs h1{
+    color: var(--lightGreen);
+    font-size: 4vw;
+    font-weight: 900;
+    font-family: "AvenirRoman";
+    margin-bottom: 1.3vh;
+  }
+
+  .aboutUs p{
+    font-size: 2.5vw;
+    font-weight: 400;
+    font-family: "AvenirBook";
+  }
+
+  .aboutUs h2{
+    font-size: 2.5vw;
+    font-weight: 900;
+    font-family: "AvenirRoman";
+    margin-top: 3vh;
+  }
+
+
+  .highlights{
+    margin-top: 4vh;
+  }
+
+  .highlights h1{
+    font-size: 3.5vw;
+    font-weight: 900;
+    font-family:  "AvenirRoman";
+  }
+
+  .highlights h1 span{
+    font-size: 2.1vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    margin-left: 1vw;
+  }
+
+  .highlightContainer{
+    margin-top: 1vh;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+
+  .highlightYear{
+    width: 10%;
+    background: var(--darkGreen);
+    color: var(--defaultWhite);
+    padding: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .highlightYear select{
+    border: 0;
+    background: none;
+    color: var(--AuxilaryWhite);
+    font-size: 3.3vw;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  .highlightYear select:focus{
+    outline: none;
+  }
+
+  .highlightYear  img{
+    max-width: 2.2vw;
+    height: auto;
+    margin-left: .9vw;
+  }
+
+
+  .highlightContent{
+    width: 72%;
+    background: var(--grayAuto);
+    color: var(--defaultWhite);
+    padding: 2.5vh;
+    margin-left: 3vw;
+  }
+
+  .highlightContent p{
+    font-size: 2vw;
+    font-weight: 400;
+    font-family: "AvenirBook";
+  }
+
+
+
+  .history{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 0;
+  }
+
+  .historyText{
+    width: 100%;
+  }
+
+  .historyText h1{
+  font-size: 6vw;
+  font-weight: 400;
+  font-family: "AvenirHeavy";
+  margin-bottom: 0vh;
+  }
+
+  .historyText p{
+  font-size: 2.5vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  padding-right: 0%;
+  margin-bottom: 3vh;
+  }
+
+  .historyVideo{
+    width: 100%;
+  }
+
+  .historyVideo video{
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  .boardMembers{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+  }
+  
+  .boardMembers h1{
+    font-size: 6vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    margin-bottom: 2vh;
+  }
+  
+  .boardMembers h1 span{
+    font-size: 6vw;
+    font-weight: 700;
+    font-family: "AvenirHeavy";
+  
+  }
+  
+  .membersContainer{
+    display: flex;
+    align-items: center;
+    width: auto;
+    overflow: scroll;
+    height: 30vh;
+    
+  }
+  
+  .membersContainer::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .membersCard{
+    min-width: 45%;
+    height: inherit;
+    margin-right: .3vw;
+    border-radius: .2rem;
+    overflow-y: hidden;
+  }
+
+  #adeolu{
+    background: url(images/Adeolu.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #Sylvia{
+    background: url(images/Sylvia.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #Isidore{
+    background: url(images/Isidore.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #Lolade{
+    background: url(images/Lolade.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #Victoria{
+    background: url(images/Victoria.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #Peter{
+    background: url(images/Peter.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #Alban{
+    background: url(images/Alban.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .membersCard h3{
+    font-size: 2.5vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    margin-bottom: 2vh;
+    color: var(--AuxilaryWhite);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+  }
+
+
+  .missionAndVision{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--grayGreen);
+    padding: 3vh 4vw;
+    margin: 5vh -4vw 0 -4vw;
+    color: var(--AuxilaryWhite);
+  }
+  
+  .mands{
+    width: 100%;
+    margin: 2.5vh 0;
+  }
+  
+  .mands h1 span{
+    font-weight: 900;
+    font-family: "AvenirHeavy";
+  }
+  
+  .mands h1{
+    font-size: 6vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+  }
+  
+  .mands p{
+    font-size: 3vw;
+    padding-right: 0vw;
+    font-weight: 400;
+    font-family: "ArconRegular";
+    margin-top: 1vh;
+  }
+  
+}

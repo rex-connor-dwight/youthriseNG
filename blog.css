@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,900;1,100;1,200;1,300;1,500;1,900&display=swap');
+@font-face {
+    font-family: "ModernAge";
+    src: url(Fonts/Modern\ Age.ttf);
+}
+@font-face {
+    font-family: "Quincy";
+    src: url(Fonts/QuincyItalic-Ea3Rz.ttf);
+}
+@font-face {
+    font-family: "AvenirBlack";
+    src: url(Fonts/AvenirLBlack.otf);
+}
+@font-face {
+    font-family: "AvenirBook";
+    src: url(Fonts/AvenirLBook.otf);
+}
+@font-face {
+    font-family: "AvenirRoman";
+    src: url(Fonts//AvenirLRoman.otf);
+}
+
+@font-face {
+    font-family: "Arcon-Regular";
+    src: url(Fonts/Arcon-Regular.otf);
+}
+
+body{
+    background: var(--Book);
+}
+
+:root{
+    --lightred: #f83600;
+    --darkgreen: #038922;
+    --lightgreen: #00f840;
+    --darkred: #890303;
+    --lightgray: #070c0e;
+    --mildwhite: #274555;
+    --blue: #000507;
+    --Book: #e7edf1;
+    --AD:#ffffff;
+    --gray: #a6a5a5;
+    --lightblue:#283b4c;
+    --newGradient: linear-gradient(90deg, var(--lightgreen), var(--darkgreen));
+    --gradient: linear-gradient(90deg, var(--lightred), var(--darkred));
+
+
+    --lightGreen: #13f759;
+    --darkGreen: #050b0a;
+    --grayAuto: #888b8b;
+    --defaultWhite: #f7fffe;
+    --AuxilaryWhite: #e5f6f4;
+    --GrayGreen: #068a1c;
+    --auxGreen: #001a16;
+    --amiable: #c8e3d4;
+}
+
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: var(--Book);
+    text-decoration: none;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 4vh 5%;
+  position: absolute;
+  width: 90%;
+  color: var(--darkGreen);
+  z-index: 3;
+}
+
+header img{
+  max-width: 15vw;
+  height: auto;
+}
+
+body{
+    background: var(--AuxilaryWhite);
+}
+
+
+
+
+header  ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header  ul li {
+  margin-left: 2rem;
+  font-size: 1.1vw;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header  ul li a {
+  text-decoration: none;
+  color: var(--darkGreen);
+}
+
+header  ul li.resources:hover ul {
+  display: block;
+}
+
+.resources {
+  display: flex;
+  align-items: baseline;
+  justify-content:center;
+}
+
+
+header  ul li ul {
+  display: none;
+  position: absolute;
+  background-color: var(--grayAuto);
+  border-radius: 0 0 4px 4px;
+  padding: .5vh 0;
+  margin-top: 2.5vh;
+}
+
+header  ul li ul li {
+  display: block;
+  min-width: 160px;
+  padding: 1vh 0;
+  margin: 0;
+  font-size: .9vw;
+}
+
+header  ul li ul li a {
+  padding: 10px;
+  text-align: left;
+  color: var(--AuxilaryWhite);
+}
+
+
+body{
+  color: var(--defaultWhite);
+  
+}
+
+
+#nav{
+    display: none;
+}
+  
+#navAlpha{
+    display: none;
+}
+
+
+.blog{
+    padding: 20vh 7%;
+}
+
+.editorsPick{
+    display: flex;
+    background: var(--amiable);
+    border-radius: .2rem;
+}
+
+.editorsPick a{
+    display: flex;
+    background: var(--AD);
+    border-radius: .2rem;
+    color: var(--blue);
+}
+
+.epIMG{
+    width: 45%;
+    background: url(images/talkOrange.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: .2rem;
+}
+
+.epIMG img{
+    max-width: 100%;
+    height: auto;
+    border-radius: .2rem;
+    visibility: hidden;
+}
+
+.epTXT{
+    width: 55%;
+    padding: 2rem;
+    background: var(--amiable);
+}
+
+.epTXT h4{
+    font-weight: 500;
+    font-size: .9vw;
+    font-family: "AvenirBook";
+    color: var(--mildwhite);
+    margin-bottom: 1.5rem;
+}
+
+.epTXT h3{
+    font-weight: 500;
+    font-size: 1.2vw;
+    font-family: "AvenirBook";
+}
+
+.epTXT h1{
+    font-weight: 600;
+    font-size: 2.2vw;
+    margin: .2rem 0 .8rem 0;
+    font-family: "AvenirBlack";
+}
+
+.epTXT h1 span{
+    color: var(--darkgreen);
+}
+
+.epTXT p{
+    font-size: 1vw;
+    font-weight: 400;
+    font-family: "AvenirBook";
+}
+
+.epTXT h2{
+    font-size: .7vw;
+    font-weight: 600;
+    margin-top: 1.7rem;
+    font-style: italic;
+}
+
+.epTXT h5{
+    font-size: .8vw;
+    font-weight: 400;
+    font-family: "AvenirBook";
+    color: var(--gray);
+}
+
+.featuredBlog{
+    display: flex;
+    flex-direction: column;
+    padding: 0 7%;
+    margin-top: -5%;
+}
+
+.featuredBlog h2{
+    font-weight: 400;
+    font-size: 1.3vw;
+    margin-bottom: 1rem;
+    font-family: "AvenirBlack";
+    color: var(--lightblue);
+}
+
+.fbCon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    overflow: scroll;
+}
+
+.fbCon::-webkit-scrollbar{
+    display: none;
+}
+
+.fbCon button{
+    border: 0;
+    margin: 0 1.5rem 0 0;
+    border-radius: .2rem;
+    background: var(--blue);
+    cursor: pointer;
+}
+
+.fbItems{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    color: var(--Book);
+    border: 0;
+}
+
+.fbItems h1{
+    font-size: 1.6vw;
+    font-weight: 700;
+    font-family: "AvenirBook";
+    margin-bottom: .8rem;
+}
+
+.fbItems h1 span{
+    font-weight: 700;
+    font-family: "AvenirBook";
+    margin-bottom: .8rem;
+    color: var(--darkgreen);
+}
+
+.fbItems p{
+    font-size: .9vw;
+    font-weight: 400;
+    font-family: "AvenirBook";
+    margin-bottom: 1.2rem;
+}
+
+.fbItemsFooter{
+    display: flex;
+    align-items: center;
+}
+
+.fbItemsFooter img{
+    max-width: 15%;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.fbItemsFooter h5{
+    font-size: .6vw;
+    font-weight: 500;
+    font-family: "AvenirBook";
+    font-style: italic;
+    color: var(--gray);
+}
+
+#reBlog,#trBlog,#ahBlog,#joBlog{
+    background: var(--auxGreen);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: none;
+        margin: 0;
+        padding: 4vh 7vw;
+        position: absolute;
+        width: 85%;
+        z-index: 999;
+      }
+      
+      header img{
+        max-width: 27vw;
+        height: auto;
+        position: absolute;
+        top: 0;
+        margin-top: 5vh;
+      }
+      
+      
+      nav{
+        display: none;
+      }
+      
+      header  ul {
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        margin-left: 8vh;
+      }
+      
+      header  ul li {
+        margin-left: 2.5rem;
+        margin-bottom: 4vh;
+        font-size: 4vw;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      header  ul li a {
+        text-decoration: none;
+        color: #fff;
+      }
+      
+      header  ul li.resources:hover ul {
+        display: block;
+      }
+      
+      .resources {
+        display: flex;
+        align-items: baseline;
+        justify-content:center;
+      }
+      
+      
+      header  ul li ul {
+        display: none;
+        position: absolute;
+        background-color: var(--grayAuto);
+        border-radius: 0 0 4px 4px;
+        padding: .5vh 0;
+        margin-top: 2.5vh;
+      }
+      
+      header  ul li ul li {
+        display: block;
+        min-width: 160px;
+        padding: 1vh 0;
+        margin: 0;
+        font-size: 2.2vw;
+      }
+      
+      header  ul li ul li a {
+        padding: 10px;
+        text-align: left;
+      }
+      
+      
+      body{
+        color: var(--defaultWhite);
+      }
+      
+      #nav{
+        display: block;
+        border: 0;
+        background: 0;
+        cursor: pointer;
+        margin-right: 4vw;
+      }
+    
+      #navAlpha{
+        display: none;
+        border: 0;
+        background: 0;
+        cursor: pointer;
+        margin-right: 4vw;
+      }
+      
+    
+      #nav img{
+        max-width: 6vw;
+        height: auto;
+      }
+    
+      #navAlpha img{
+        max-width: 6vw;
+        height: auto;
+      }
+    
+    
+    .blog{
+        padding: 25vw 4% 8vw 4%;
+    }
+    
+    .editorsPick{
+        display: flex;
+        flex-direction: column;
+        background: var(--amiable);
+        border-radius: .2rem;
+    }
+    
+    .editorsPick a{
+        display: flex;
+        background: var(--AD);
+        border-radius: .2rem;
+        color: var(--blue);
+        flex-direction: column;
+    }
+    
+    .epIMG{
+        width: 100%;
+        background: url(images/talkOrange.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: .2rem;
+    }
+    
+    .epIMG img{
+        max-width: 100%;
+        height: 200px;
+        border-radius: .2rem;
+        /* visibility: hidden; */
+    }
+    
+    .epTXT{
+        width: 100%;
+        padding: 0;
+    }
+    
+    .epTXT h4{
+        font-weight: 500;
+        font-size: 2.2vw;
+        font-family: "AvenirBook";
+        color: var(--mildwhite);
+        margin: .5rem 0 1.2rem 0;
+        padding: 1.5rem 0 0 1.5rem;
+    }
+    
+    .epTXT h3{
+        font-weight: 500;
+        font-size: 2.4vw;
+        font-family: "AvenirBook";
+        padding: 0 0 0 1.5rem;
+    }
+    
+    .epTXT h1{
+        font-weight: 600;
+        font-size: 3.8vw;
+        margin: .2rem 0 .8rem 0;
+        font-family: "AvenirBlack";
+        padding: 0 0 0 1.5rem;
+    }
+    
+    .epTXT h1 span{
+        color: var(--darkgreen);
+    }
+    
+    .epTXT p{
+        font-size: 2.5vw;
+        font-weight: 400;
+        font-family: "AvenirBook";
+        padding: 0 1rem 0 1.5rem;
+    }
+    
+    .epTXT h2{
+        font-size: 1.7vw;
+        font-weight: 600;
+        margin-top: 1.9rem;
+        font-style: italic;
+        padding: 0 0 0 1.5rem;
+    }
+    
+    .epTXT h5{
+        font-size: 2vw;
+        font-weight: 400;
+        font-family: "AvenirBook";
+        color: var(--gray);
+        padding: 0 0 1rem 1.5rem;
+    }
+
+
+    .featuredBlog{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 3%;
+    }
+
+    .featuredBlog h2{
+        font-weight: 400;
+        font-size: 3vw;
+        margin-bottom: .7rem;
+        font-family: "AvenirBlack";
+        color: var(--lightblue);
+        padding: 0 5%;
+    }
+
+    .fbCon{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+        overflow: scroll;
+        padding: 0 5%;
+    }
+
+    .fbCon::-webkit-scrollbar{
+        display: none;
+    }
+
+    .fbCon button{
+        border: 0;
+        margin: 0 1.5rem 0 0;
+        border-radius: .2rem;
+        background: var(--blue);
+        cursor: pointer;
+    }
+
+    .fbItems{
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 2.5rem 1.2rem 1.2rem 1.2rem;
+        color: var(--Book);
+        border: 0;
+    }
+
+    .fbItems h1{
+        font-size: 3.3vw;
+        font-weight: 700;
+        font-family: "AvenirBook";
+        margin-bottom: .8rem;
+    }
+
+    .fbItems h1 span{
+        font-weight: 700;
+        font-family: "AvenirBook";
+        margin-bottom: .8rem;
+        color: var(--darkgreen);
+    }
+
+    .fbItems p{
+        font-size: 2.1vw;
+        font-weight: 400;
+        font-family: "AvenirBook";
+        margin-bottom: 1rem;
+    }
+
+    .fbItemsFooter{
+        display: flex;
+        align-items: center;
+    }
+
+    .fbItemsFooter img{
+        max-width: 19%;
+        height: auto;
+        margin-right: 1rem;
+    }
+
+    .fbItemsFooter h5{
+        font-size: 1.6vw;
+        font-weight: 500;
+        font-family: "AvenirBook";
+        font-style: italic;
+        color: var(--gray);
+    }
+
+    #reBlog,#trBlog,#ahBlog,#joBlog{
+        background: var(--auxGreen);
+    }
+}

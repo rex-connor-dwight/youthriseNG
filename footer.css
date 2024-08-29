@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,900;1,100;1,200;1,300;1,500;1,900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/arcon');
+
+                
+
+@font-face {
+    font-family: "AvenirBlack";
+    src: url(Fonts/AvenirLBlack.otf);
+}
+@font-face {
+    font-family: "AvenirBook";
+    src: url(Fonts/AvenirLBook.otf);
+}
+@font-face {
+    font-family: "AvenirRoman";
+    src: url(Fonts/AvenirLRoman.otf);
+}
+
+@font-face {
+    font-family: "AvenirLight";
+    src: url(Fonts/AvenirLight.ttf);
+}
+
+@font-face {
+    font-family: "AvenirHeavy";
+    src: url(Fonts/Avenir\ Heavy.ttf);
+}
+
+@font-face {
+    font-family: "ArconRegular";
+    src: url(Fonts/ArconRegular.otf);
+}
+
+@font-face {
+    font-family: "ArconRegularRounded";
+    src: url(Fonts/ArconRoundedRegular.otf);
+}
+
+@font-face {
+    font-family: "MiyakeRegular";
+    src: url(Fonts/miyakeregular.otf);
+}
+
+:root{
+    --lightGreen: #13f759;
+    --darkGreen: #06100e;
+    --grayAuto: #51645d;
+    --defaultWhite: #f7fffe;
+    --AuxilaryWhite: #e2fbed;
+    --grayGreen: #068a1c;
+    --gray: #c3d6cb;
+    --Hoyeton: #001a16;
+    --Lemon: #19f303;
+    --amiable: #c8e3d4;
+    --email: #274b45;
+}
+
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: var(--Book);
+    text-decoration: none;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+footer{
+    background: var(--Hoyeton);
+    padding: 0 5%;
+}
+
+.footerTop{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 7vh 0 3vh 0;
+}
+
+.footerTop img{
+    max-width: 15vw;
+    margin-right: 3vw;
+    filter: var(--gray);
+}
+
+.footerContact h1{
+    font-size: 1.4vw;
+    font-weight: 500;
+    font-family: "AvenirHeavy";
+    margin-bottom: 3vh;
+    line-height: 2.8vh;
+    color: var(--gray);
+}
+
+.footerContact h1 span{
+    font-size: .9vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    color: var(--grayAuto);
+}
+
+.footerPrograms{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerPrograms h1{
+    font-size: 1.4vw;
+    font-weight: 500;
+    font-family: "AvenirHeavy";
+    margin-bottom: 2vh;
+    color: var(--gray);
+}
+
+.footerPrograms a{
+    font-size: .9vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    margin-bottom: 3vh;
+    color: var(--grayAuto);
+}
+
+
+footer form{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+footer form label{
+    font-size: 1.28vw;
+    font-weight: 500;
+    font-family: "AvenirHeavy";
+    margin-bottom: 2vh;
+    color: var(--gray);
+}
+
+footer form p{
+    font-size: .7vw;
+    font-weight: 500;
+    font-family: "AvenirRoman";
+    margin-bottom: 2vh;
+    color: var(--grayAuto);
+}
+
+#email{
+    font-size: 1vw;
+    font-weight: 300;
+    font-family: "AvenirRoman";
+    border: 0;
+    background: var(--email);
+    padding: 1vw ;
+    border-radius: .2rem;
+    color: var(--AuxilaryWhite);
+    margin-bottom: 2.5vh;
+}
+
+#email::placeholder{
+    font-size: .8vw;
+    font-weight: 300;
+    font-family: "AvenirRoman";
+}
+
+#footerSubmit{
+    font-size: 1vw;
+    font-weight: 300;
+    font-family: "AvenirRoman";
+    border: 0;
+    background: var(--grayGreen);
+    padding: 1vw ;
+    border-radius: .2rem;
+    color: var(--AuxilaryWhite);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+
+footer{
+    background: var(--Hoyeton);
+    padding: 0 5%;
+}
+
+.footerTop{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5vh 0 4vh 0;
+}
+
+.footerImg{
+    width: 100%;
+    margin-bottom: 3vh;
+}
+
+.footerTop img{
+    max-width: 35vw;
+    margin-right: 0;
+    filter: var(--gray);
+}
+
+.footerContact {
+    width: 50%;
+}
+
+.footerContact h1{
+    font-size: 3.4vw;
+    font-weight: 500;
+    font-family: "AvenirHeavy";
+    margin-bottom: 3vh;
+    line-height: 1.8vh;
+    color: var(--gray);
+}
+
+.footerContact h1 span{
+    font-size: 2.3vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    color: var(--grayAuto);
+}
+
+.footerPrograms{
+    width: 50%;
+}
+
+.footerPrograms{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+}
+
+.footerPrograms h1{
+    font-size: 3.4vw;
+    font-weight: 500;
+    font-family: "AvenirHeavy";
+    margin-bottom: 2vh;
+    color: var(--gray);
+}
+
+.footerPrograms a{
+    font-size: 2.3vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    margin-bottom: 3vh;
+    color: var(--grayAuto);
+}
+
+
+footer form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+footer form label{
+    font-size: 3.5vw;
+    font-weight: 500;
+    font-family: "AvenirHeavy";
+    margin-bottom: .3vh;
+    color: var(--gray);
+}
+
+footer form p{
+    font-size: 2.5vw;
+    font-weight: 500;
+    font-family: "AvenirRoman";
+    margin-bottom: 2vh;
+    color: var(--grayAuto);
+}
+
+#email{
+    font-size: 3vw;
+    font-weight: 300;
+    font-family: "AvenirRoman";
+    border: 0;
+    background: var(--email);
+    padding: 2vh 3vw ;
+    border-radius: .2rem;
+    color: var(--AuxilaryWhite);
+    margin-bottom: 2.5vh;
+}
+
+#email::placeholder{
+    font-size: 2.5vw;
+    font-weight: 300;
+    font-family: "AvenirRoman";
+}
+
+#footerSubmit{
+    font-size: 2.5vw;
+    font-weight: 300;
+    font-family: "AvenirRoman";
+    border: 0;
+    background: var(--grayGreen);
+    padding: 2vh 3vw ;
+    border-radius: .2rem;
+    color: var(--AuxilaryWhite);
+    cursor: pointer;
+}
+}

@@ -1,0 +1,769 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,900;1,100;1,200;1,300;1,500;1,900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/arcon');
+
+                
+
+@font-face {
+    font-family: "AvenirBlack";
+    src: url(Fonts/AvenirLBlack.otf);
+}
+@font-face {
+    font-family: "AvenirBook";
+    src: url(Fonts/AvenirLBook.otf);
+}
+@font-face {
+    font-family: "AvenirRoman";
+    src: url(Fonts/AvenirLRoman.otf);
+}
+
+@font-face {
+    font-family: "AvenirLight";
+    src: url(Fonts/AvenirLight.ttf);
+}
+
+@font-face {
+    font-family: "AvenirHeavy";
+    src: url(Fonts/Avenir\ Heavy.ttf);
+}
+
+@font-face {
+    font-family: "ArconRegular";
+    src: url(Fonts/ArconRegular.otf);
+}
+
+@font-face {
+    font-family: "ArconRegularRounded";
+    src: url(Fonts/ArconRoundedRegular.otf);
+}
+
+@font-face {
+    font-family: "MiyakeRegular";
+    src: url(Fonts/miyakeregular.otf);
+}
+
+:root{
+    --lightGreen: #13f759;
+    --darkGreen: #06100e;
+    --grayAuto: #51645d;
+    --defaultWhite: #f7fffe;
+    --AuxilaryWhite: #e5f6f4;
+    --GrayGreen: #068a1c;
+}
+
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: var(--Book);
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    color: var(--darkGreen);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 4vh 5%;
+  position: absolute;
+  width: 90%;
+  color: var(--darkGreen);
+  z-index: 3;
+}
+
+header img{
+  max-width: 15vw;
+  height: auto;
+}
+
+body{
+    background: var(--AuxilaryWhite);
+}
+
+
+
+
+header  ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header  ul li {
+  margin-left: 2rem;
+  font-size: 1.1vw;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header  ul li a {
+  text-decoration: none;
+  color: var(--darkGreen);
+}
+
+header  ul li.resources:hover ul {
+  display: block;
+}
+
+.resources {
+  display: flex;
+  align-items: baseline;
+  justify-content:center;
+}
+
+
+header  ul li ul {
+  display: none;
+  position: absolute;
+  background-color: var(--grayAuto);
+  border-radius: 0 0 4px 4px;
+  padding: .5vh 0;
+  margin-top: 2.5vh;
+}
+
+header  ul li ul li {
+  display: block;
+  min-width: 160px;
+  padding: 1vh 0;
+  margin: 0;
+  font-size: .9vw;
+}
+
+header  ul li ul li a {
+  padding: 10px;
+  text-align: left;
+  color: var(--AuxilaryWhite);
+}
+
+
+body{
+  color: var(--defaultWhite);
+  
+}
+
+
+#nav{
+    display: none;
+}
+  
+#navAlpha{
+    display: none;
+}
+
+.camapaigns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0vh 3.5vw 0vh 5vw;
+    color: var(--darkGreen);
+    height: 100vh;
+}
+
+.campaignsText{
+    width: 50%;
+}
+
+.campaignsText h1{
+    font-size: 5vw;
+    margin-bottom: 2vh;
+    font-weight: 500;
+    font-family: "AvenirHeavy";
+}
+
+.campaignsText p{
+    font-size: 1.3vw;
+    margin-bottom: 2vh;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    margin-right: 6vw;
+}
+
+.campaignsContainer{
+    width: 40%;
+}
+
+
+.camapaignsContents{
+    height: 40vw;
+    margin: 7vw 1vw 2vw 3vw ;
+    border-radius: .2rem;
+    color: var(--AuxilaryWhite);
+    padding: 0 2vw;
+}
+
+.camapignsContentsText{
+    padding-top: 70%;
+}
+
+#weArePeople h2{
+    font-size: 2.3vw;
+    font-weight: 500;
+    font-family: "AvenirHeavy";
+    margin-bottom: 2%;
+}
+
+#Expressed h2{
+    font-size: 2.3vw;
+    font-weight: 500;
+    font-family: "AvenirHeavy";
+    margin-bottom: 2%;
+}
+
+#activism h2{
+    font-size: 2.3vw;
+    font-weight: 500;
+    font-family: "AvenirHeavy";
+    margin-bottom: 2%;
+}
+
+#orangeHands h2{
+    font-size: 2.3vw;
+    font-weight: 500;
+    font-family: "AvenirHeavy";
+    margin-bottom: 2%;
+}
+
+#talkOrange h2{
+    font-size: 2.3vw;
+    font-weight: 500;
+    font-family: "AvenirHeavy";
+    margin-bottom: 2%;
+}
+
+#weArePeople p{
+    font-size: .8vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    margin-bottom: 2%;
+}
+
+#orangeHands p{
+    font-size: .8vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    margin-bottom: 2%;
+}
+
+#activism p{
+    font-size: .8vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    margin-bottom: 2%;
+}
+
+#Expressed p{
+    font-size: .8vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    margin-bottom: 2%;
+}
+
+#talkOrange p{
+    font-size: .8vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    margin-bottom: 2%;
+}
+
+#weArePeople button{
+    border: 0;
+    background: var(--GrayGreen);
+    color: var(--AuxilaryWhite);
+    font-size: .8vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    padding: .5vw 3vw;
+    border-radius: .2rem;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+#orangeHands button{
+    border: 0;
+    background: var(--GrayGreen);
+    color: var(--AuxilaryWhite);
+    font-size: .8vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    padding: .5vw 3vw;
+    border-radius: .2rem;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+#activism button{
+    border: 0;
+    background: var(--GrayGreen);
+    color: var(--AuxilaryWhite);
+    font-size: .8vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    padding: .5vw 3vw;
+    border-radius: .2rem;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+#Expressed button{
+    border: 0;
+    background: var(--GrayGreen);
+    color: var(--AuxilaryWhite);
+    font-size: .8vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    padding: .5vw 3vw;
+    border-radius: .2rem;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+#talkOrange button{
+    border: 0;
+    background: var(--GrayGreen);
+    color: var(--AuxilaryWhite);
+    font-size: .8vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    padding: .5vw 3vw;
+    border-radius: .2rem;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+/* #weArePeople,#orangeHands,#activism,#Expressed{
+    display: none;
+} */
+
+#activism{
+    background: url(images/activism.png) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+
+#Expressed{
+    background: url(images/expressed.png) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+#talkOrange{
+    background: url(images/talkOrange.png) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+#orangeHands{
+    background: url(images/orangeHands.png) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+#weArePeople{
+    background: url(images/weArePeople.png) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.campaignsToggle{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    border: 0;
+    background: 0;
+}
+
+.campaignsToggle img{
+    max-width: 3vw;
+    height: 3vw;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+
+    header{
+      display: flex;
+      align-items: center;
+      justify-content: none;
+      margin: 0;
+      padding: 4vh 7vw;
+      position: absolute;
+      width: 85%;
+      z-index: 999;
+    }
+    
+    header img{
+      max-width: 27vw;
+      height: auto;
+      position: absolute;
+      top: 0;
+      margin-top: 5vh;
+    }
+    
+    
+    nav{
+      display: none;
+    }
+    
+    header  ul {
+      list-style: none;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      margin-left: 8vh;
+    }
+    
+    header  ul li {
+      margin-left: 2.5rem;
+      margin-bottom: 4vh;
+      font-size: 4vw;
+      font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header  ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    header  ul li.resources:hover ul {
+      display: block;
+    }
+    
+    .resources {
+      display: flex;
+      align-items: baseline;
+      justify-content:center;
+    }
+    
+    
+    header  ul li ul {
+      display: none;
+      position: absolute;
+      background-color: var(--grayAuto);
+      border-radius: 0 0 4px 4px;
+      padding: .5vh 0;
+      margin-top: 2.5vh;
+    }
+    
+    header  ul li ul li {
+      display: block;
+      min-width: 160px;
+      padding: 1vh 0;
+      margin: 0;
+      font-size: 2.2vw;
+    }
+    
+    header  ul li ul li a {
+      padding: 10px;
+      text-align: left;
+    }
+    
+    
+    body{
+      color: var(--defaultWhite);
+    }
+    
+    #nav{
+      display: block;
+      border: 0;
+      background: 0;
+      cursor: pointer;
+      margin-right: 4vw;
+    }
+  
+    #navAlpha{
+      display: none;
+      border: 0;
+      background: 0;
+      cursor: pointer;
+      margin-right: 4vw;
+    }
+    
+  
+    #nav img{
+      max-width: 6vw;
+      height: auto;
+    }
+  
+    #navAlpha img{
+      max-width: 6vw;
+      height: auto;
+    }
+
+
+
+
+    .camapaigns{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30% 5vw 0vh 5vw;
+        color: var(--darkGreen);
+        height: fit-content;
+    }
+    
+    .campaignsText{
+        width: 100%;
+    }
+    
+    .campaignsText h1{
+        font-size: 9vw;
+        margin-bottom: .3vh;
+        font-weight: 500;
+        font-family: "AvenirHeavy";
+    }
+    
+    .campaignsText p{
+        font-size: 2.6vw;
+        margin-bottom: 2vh;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        margin-right: 0vw;
+    }
+    
+    .campaignsContainer{
+        width: 100%;
+    }
+    
+    
+    .camapaignsContents{
+        height: 55vh;
+        margin: 5vw 0vw 2vw 0vw ;
+        border-radius: .2rem;
+        color: var(--AuxilaryWhite);
+        padding: 0 5vw;
+    }
+    
+    .camapignsContentsText{
+        padding-top: 25vh;
+    }
+    
+    #weArePeople h2{
+        font-size: 6.3vw;
+        font-weight: 500;
+        font-family: "AvenirHeavy";
+        margin-bottom: 2%;
+    }
+    
+    #Expressed h2{
+        font-size: 6.3vw;
+        font-weight: 500;
+        font-family: "AvenirHeavy";
+        margin-bottom: 2%;
+    }
+    
+    #activism h2{
+        font-size: 6.3vw;
+        font-weight: 500;
+        font-family: "AvenirHeavy";
+        margin-bottom: 2%;
+    }
+    
+    #orangeHands h2{
+        font-size: 6.3vw;
+        font-weight: 500;
+        font-family: "AvenirHeavy";
+        margin-bottom: 2%;
+    }
+    
+    #talkOrange h2{
+        font-size: 6.3vw;
+        font-weight: 500;
+        font-family: "AvenirHeavy";
+        margin-bottom: 2%;
+    }
+    
+    #weArePeople p{
+        font-size: 2.2vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        margin-bottom: 2%;
+    }
+    
+    #orangeHands p{
+        font-size: 2.2vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        margin-bottom: 2%;
+    }
+    
+    #activism p{
+        font-size: 2.2vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        margin-bottom: 2%;
+    }
+    
+    #Expressed p{
+        font-size: 2.2vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        margin-bottom: 2%;
+    }
+    
+    #talkOrange p{
+        font-size: 2.2vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        margin-bottom: 2%;
+    }
+    
+    #weArePeople button{
+        border: 0;
+        background: var(--GrayGreen);
+        color: var(--AuxilaryWhite);
+        font-size: 2.5vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        padding: 2vw 6vw;
+        border-radius: .2rem;
+        cursor: pointer;
+        margin-top: 2%;
+    }
+    
+    #orangeHands button{
+        border: 0;
+        background: var(--GrayGreen);
+        color: var(--AuxilaryWhite);
+        font-size: 2.5vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        padding: 2vw 6vw;
+        border-radius: .2rem;
+        cursor: pointer;
+        margin-top: 2%;
+    }
+    
+    #activism button{
+        border: 0;
+        background: var(--GrayGreen);
+        color: var(--AuxilaryWhite);
+        font-size: 2.5vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        padding: 2vw 6vw;
+        border-radius: .2rem;
+        cursor: pointer;
+        margin-top: 2%;
+    }
+    
+    #Expressed button{
+        border: 0;
+        background: var(--GrayGreen);
+        color: var(--AuxilaryWhite);
+        font-size: 2.5vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        padding: 2vw 6vw;
+        border-radius: .2rem;
+        cursor: pointer;
+        margin-top: 2%;
+    }
+    
+    #talkOrange button{
+        border: 0;
+        background: var(--GrayGreen);
+        color: var(--AuxilaryWhite);
+        font-size: 2.5vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        padding: 2vw 6vw;
+        border-radius: .2rem;
+        cursor: pointer;
+        margin-top: 2%;
+    }
+    
+    /* #weArePeople,#orangeHands,#activism,#Expressed{
+        display: none;
+    } */
+    
+    #activism{
+        background: url(images/activism.png) no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    
+    
+    #Expressed{
+        background: url(images/expressed.png) no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    
+    #talkOrange{
+        background: url(images/talkOrange.png) no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    
+    #orangeHands{
+        background: url(images/orangeHands.png) no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    
+    #weArePeople{
+        background: url(images/weArePeople.png) no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    
+    .campaignsToggle{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border: 0;
+        background: 0;
+    }
+    
+    .campaignsToggle img{
+        max-width: 8vw;
+        height: 8vw;
+        cursor: pointer;
+        margin-bottom: 5vh;
+    }
+
+
+  
+    
+
+    
+}

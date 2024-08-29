@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,900;1,100;1,200;1,300;1,500;1,900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/arcon');
+
+                
+
+@font-face {
+    font-family: "AvenirBlack";
+    src: url(Fonts/AvenirLBlack.otf);
+}
+@font-face {
+    font-family: "AvenirBook";
+    src: url(Fonts/AvenirLBook.otf);
+}
+@font-face {
+    font-family: "AvenirRoman";
+    src: url(Fonts/AvenirLRoman.otf);
+}
+
+@font-face {
+    font-family: "AvenirLight";
+    src: url(Fonts/AvenirLight.ttf);
+}
+
+@font-face {
+    font-family: "AvenirHeavy";
+    src: url(Fonts/Avenir\ Heavy.ttf);
+}
+
+@font-face {
+    font-family: "ArconRegular";
+    src: url(Fonts/ArconRegular.otf);
+}
+
+@font-face {
+    font-family: "ArconRegularRounded";
+    src: url(Fonts/ArconRoundedRegular.otf);
+}
+
+@font-face {
+    font-family: "MiyakeRegular";
+    src: url(Fonts/miyakeregular.otf);
+}
+
+:root{
+    --lightGreen: #13f759;
+    --darkGreen: #050b0a;
+    --grayAuto: #51645d;
+    --defaultWhite: #f7fffe;
+    --AuxilaryWhite: #e5f6f4;
+    --GrayGreen: #0b5016;
+    --auxGreen: #001a16;
+  
+}
+
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: var(--Book);
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    color: var(--darkGreen);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 4vh 5%;
+  position: absolute;
+  width: 90%;
+  color: var(--darkGreen);
+  z-index: 3;
+}
+
+header img{
+  max-width: 15vw;
+  height: auto;
+}
+
+
+
+
+
+
+header  ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header  ul li {
+  margin-left: 2rem;
+  font-size: 1.1vw;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header  ul li a {
+  text-decoration: none;
+  color: var(--AuxilaryWhite);
+}
+
+header  ul li.resources:hover ul {
+  display: block;
+}
+
+.resources {
+  display: flex;
+  align-items: baseline;
+  justify-content:center;
+}
+
+
+header  ul li ul {
+  display: none;
+  position: absolute;
+  background-color: var(--grayAuto);
+  border-radius: 0 0 4px 4px;
+  padding: .5vh 0;
+  margin-top: 2.5vh;
+}
+
+header  ul li ul li {
+  display: block;
+  min-width: 160px;
+  padding: 1vh 0;
+  margin: 0;
+  font-size: .9vw;
+}
+
+header  ul li ul li a {
+  padding: 10px;
+  text-align: left;
+  color: var(--AuxilaryWhite);
+}
+
+
+body{
+  color: var(--AuxilaryWhite);
+  
+}
+
+
+#nav{
+    display: none;
+}
+  
+#navAlpha{
+    display: none;
+}
+
+
+.publications{
+    display: flex;
+    flex-direction: column;
+    color: var(--darkGreen);
+}
+  
+.publicationTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15% 5vw 4% 5vw;
+    background: var(--GrayGreen);
+    color: var(--AuxilaryWhite);
+}
+
+.publicationTop h1{
+    font-size: 5vw;
+    font-weight: 700;
+    font-family: "AvenirHeavy";
+}
+
+.publicationTop p{
+    width: 45%;
+    font-size: 1.3vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+}
+
+
+.publicationContainer{
+    padding: 5% 5vw 4% 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.publicationContents{
+    display: flex;
+    margin-bottom: 6vh;
+}
+
+.publicationContents img{
+    max-width: 20vw;
+    height: auto;
+    border-radius: .2rem;
+}
+
+.publicationContentText{
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.publicationContentText h1{
+    color: var(--GrayGreen);
+    margin-bottom: 1.5vh;
+    font-size: 4vw;
+    font-weight: 600;
+    font-family: "AvenirHeavy";
+}
+
+.publicationContentText p{
+    margin-bottom: 2vh;
+    font-size: 1.3vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    margin-right: 9%;
+}
+
+.publicationContentCTA{
+    display: flex;
+    align-items: center;
+}
+
+.preview{
+    border: 0;
+    padding: 2.5vh 3.5vw;
+    background: var(--GrayGreen);
+    color: var(--AuxilaryWhite);
+    font-size: 1.3vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    border-radius: .2rem;
+    margin-right: 4vw;
+    cursor: pointer;
+}
+
+.download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--GrayGreen) .1rem solid;
+    background: 0;
+    padding: 2.5vh 2.5vw;
+    color: var(--darkGreen);
+    font-size: 1.3vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    border-radius: .2rem;
+    margin-right: 4vw;
+    cursor: pointer;
+}
+
+.download img{
+    max-width: 1vw;
+    height: 1vw;
+    margin-left: 1vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+
+    header{
+      display: flex;
+      align-items: center;
+      justify-content: none;
+      margin: 0;
+      padding: 4vh 7vw;
+      position: absolute;
+      width: 85%;
+      z-index: 999;
+    }
+    
+    header img{
+      max-width: 27vw;
+      height: auto;
+      position: absolute;
+      top: 0;
+      margin-top: 5vh;
+    }
+    
+    
+    nav{
+      display: none;
+    }
+    
+    header  ul {
+      list-style: none;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      margin-left: 8vh;
+    }
+    
+    header  ul li {
+      margin-left: 2.5rem;
+      margin-bottom: 4vh;
+      font-size: 4vw;
+      font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header  ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    header  ul li.resources:hover ul {
+      display: block;
+    }
+    
+    .resources {
+      display: flex;
+      align-items: baseline;
+      justify-content:center;
+    }
+    
+    
+    header  ul li ul {
+      display: none;
+      position: absolute;
+      background-color: var(--grayAuto);
+      border-radius: 0 0 4px 4px;
+      padding: .5vh 0;
+      margin-top: 2.5vh;
+    }
+    
+    header  ul li ul li {
+      display: block;
+      min-width: 160px;
+      padding: 1vh 0;
+      margin: 0;
+      font-size: 2.2vw;
+    }
+    
+    header  ul li ul li a {
+      padding: 10px;
+      text-align: left;
+    }
+    
+    
+    body{
+      color: var(--AuxilaryWhite);
+    }
+    
+    #nav{
+      display: block;
+      border: 0;
+      background: 0;
+      cursor: pointer;
+      margin-right: 4vw;
+    }
+  
+    #navAlpha{
+      display: none;
+      border: 0;
+      background: 0;
+      cursor: pointer;
+      margin-right: 4vw;
+    }
+    
+  
+    #nav img{
+      max-width: 6vw;
+      height: auto;
+    }
+  
+    #navAlpha img{
+      max-width: 6vw;
+      height: auto;
+    }
+
+    .publications{
+        display: flex;
+        flex-direction: column;
+        color: var(--darkGreen);
+    }
+      
+    .publicationTop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30% 5vw 7% 5vw;
+        background: var(--GrayGreen);
+        color: var(--AuxilaryWhite);
+    }
+    
+    .publicationTop h1{
+        font-size: 8.5vw;
+        font-weight: 700;
+        font-family: "AvenirHeavy";
+        width: 100%;
+        margin-bottom: 1vh;
+    }
+    
+    .publicationTop p{
+        width: 100%;
+        font-size: 3.5vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+    }
+    
+    
+    .publicationContainer{
+        padding: 5% 5vw 0% 5vw;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .publicationContents{
+        display: flex;
+        align-items: center;
+        margin-bottom: 6vh;
+    }
+    
+    .publicationContents img{
+        max-width: 30vw;
+        height: auto;
+        border-radius: .2rem;
+    }
+    
+    .publicationContentText{
+        margin-left: 3vw;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .publicationContentText h1{
+        margin-bottom: 0vh;
+        font-size: 6.3vw;
+        font-weight: 600;
+        font-family: "AvenirHeavy";
+    }
+    
+    .publicationContentText p{
+        margin-bottom: .4vh;
+        font-size: 2.3vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        margin-right: 0%;
+    }
+    
+    .publicationContentCTA{
+        display: flex;
+        align-items: center;
+        margin-top: .7vh;
+    }
+    
+    .preview{
+        border: 0;
+        padding: .8vh 4.5vw;
+        background: var(--GrayGreen);
+        color: var(--AuxilaryWhite);
+        font-size: 3vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        border-radius: .2rem;
+        margin-right: 4vw;
+        cursor: pointer;
+        z-index: 999;
+    }
+    
+    .download{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: var(--GrayGreen) .1rem solid;
+        background: 0;
+        padding: .7vh 3.5vw;
+        color: var(--darkGreen);
+        font-size: 3vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        border-radius: .2rem;
+        margin-right: 4vw;
+        cursor: pointer;
+        z-index: 999;
+    }
+    
+    .download img{
+        max-width: 2vw;
+        height: 2vw;
+        margin-left: 1vw;
+    }
+    
+}

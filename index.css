@@ -1,0 +1,1465 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,900;1,100;1,200;1,300;1,500;1,900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/arcon');
+
+                
+
+@font-face {
+    font-family: "AvenirBlack";
+    src: url(Fonts/AvenirLBlack.otf);
+}
+@font-face {
+    font-family: "AvenirBook";
+    src: url(Fonts/AvenirLBook.otf);
+}
+@font-face {
+    font-family: "AvenirRoman";
+    src: url(Fonts/AvenirLRoman.otf);
+}
+
+@font-face {
+    font-family: "AvenirLight";
+    src: url(Fonts/AvenirLight.ttf);
+}
+
+@font-face {
+    font-family: "AvenirHeavy";
+    src: url(Fonts/Avenir\ Heavy.ttf);
+}
+
+@font-face {
+    font-family: "ArconRegular";
+    src: url(Fonts/ArconRegular.otf);
+}
+
+@font-face {
+    font-family: "ArconRegularRounded";
+    src: url(Fonts/ArconRoundedRegular.otf);
+}
+
+@font-face {
+    font-family: "MiyakeRegular";
+    src: url(Fonts/miyakeregular.otf);
+}
+
+:root{
+    --lightGreen: #13f759;
+    --darkGreen: #06100e;
+    --grayAuto: #51645d;
+    --defaultWhite: #f7fffe;
+    --AuxilaryWhite: #e2fbed;
+    --grayGreen: #068a1c;
+    --gray: #c3d6cb;
+    --Hoyeton: #001a16;
+    --Lemon: #19f303;
+    --amiable: #c8e3d4;
+}
+
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: var(--Book);
+    text-decoration: none;
+}
+
+body{
+  background: var(--AuxilaryWhite);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 4vh 5%;
+  position: absolute;
+  width: 88.9%;
+}
+
+header img{
+  max-width: 15vw;
+  height: auto;
+}
+
+
+
+
+header  ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header  ul li {
+  margin-left: 2rem;
+  font-size: 1.2vw;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header  ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header  ul li.resources:hover ul {
+  display: block;
+}
+
+.resources {
+  display: flex;
+  align-items: baseline;
+  justify-content:center;
+}
+
+
+header  ul li ul {
+  display: none;
+  position: absolute;
+  background-color: var(--grayAuto);
+  border-radius: 0 0 4px 4px;
+  padding: .5vh 0;
+  margin-top: 2.5vh;
+}
+
+header  ul li ul li {
+  display: block;
+  min-width: 160px;
+  padding: 1vh 0;
+  margin: 0;
+  font-size: .9vw;
+}
+
+header  ul li ul li a {
+  padding: 10px;
+  text-align: left;
+}
+
+
+body{
+  color: var(--defaultWhite);
+}
+
+#nav{
+  display: none;
+}
+
+#navAlpha{
+  display: none;
+}
+
+
+.home{
+  height: 100vh;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(images/homeBg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+}
+
+.homeContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeContainer h1{
+  font-size: 4.5vw;
+  text-align: center;
+  font-weight: 300;
+  font-family: "ArconRegular";
+  margin-bottom: 1.5rem;
+}
+
+.homeContainer h1 span{
+  font-size: 4.5vw;
+  text-align: center;
+  font-weight: 900;
+}
+
+.homeColoredText{
+  color: var(--grayGreen);
+}
+
+.homeContainer p{
+  width: 55%;
+  text-align: center;
+  font-size: 1.2vw;
+  font-weight: 400;
+  font-family: "ArconRegular";
+  margin-bottom: 2rem;
+}
+
+.homeContainer button{
+  border: 0;
+  padding: .8rem 3rem;
+  background: var(--grayGreen);
+  border-radius: .2rem;
+  cursor: pointer;
+  color: var(--defaultWhite);
+  font-size: 1.2vw;
+}
+
+.homeAnnouncement{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5vh;
+}
+
+.announceBanner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 3rem;
+}
+
+
+.announceBanner h1{
+  font-size: 1.8vw;
+  font-weight: 900;
+  font-family: "AvenirBlack";
+  color: var(--AuxilaryWhite);
+  margin-right: .1vw;
+}
+
+.announceBanner p{
+  font-size: 1.2vw;
+  font-weight: 400;
+  font-family: "AvenirBook";
+  color: var(--lightGreen);
+  padding-left: .1rem;
+}
+
+
+
+.about{
+  display: flex;
+  flex-direction: column;
+  background: var(--AuxilaryWhite);
+  color: var(--darkGreen);
+  padding: 20vh 4vw 7vh 4vw;
+}
+
+.aboutUs{
+  background: url(images/aboutUsBg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--AuxilaryWhite);
+  padding: 4vw;
+  border-radius: .1rem;
+}
+
+.aboutUs h1{
+  color: var(--lightGreen);
+  font-size: 2.5vw;
+  font-weight: 900;
+  font-family: "AvenirRoman";
+  margin-bottom: 3vh;
+}
+
+.aboutUs p{
+  font-size: 1.6vw;
+  font-weight: 400;
+  font-family: "AvenirBook";
+}
+
+.aboutUs p span{
+  font-size: 1.3vw;
+  font-weight: 900;
+  font-family: "AvenirRoman";
+  line-height: 10vh;
+}
+
+.highlights{
+  margin-top: 6vh;
+}
+
+.highlights h1{
+  font-size: 1.3vw;
+  font-weight: 900;
+  font-family:  "AvenirRoman";
+}
+
+.highlights h1 span{
+  font-size: .8vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  margin-left: 1vw;
+}
+
+.highlightContainer{
+  margin-top: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.highlightYear{
+  width: 10%;
+  background: var(--darkGreen);
+  color: var(--defaultWhite);
+  padding: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlightYear select{
+  border: 0;
+  background: none;
+  color: var(--AuxilaryWhite);
+  font-size: 1.4vw;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.highlightYear select:focus{
+  outline: none;
+}
+
+.highlightYear  img{
+  max-width: 1vw;
+  height: auto;
+  margin-left: .5vw;
+}
+
+
+.highlightContent{
+  width: 77%;
+  background: var(--grayAuto);
+  color: var(--defaultWhite);
+  padding: 2.5vh;
+}
+
+.highlightContent p{
+  font-size: 1vw;
+  font-weight: 400;
+  font-family: "AvenirBook";
+}
+
+/* Thematic Styles */
+
+
+.thematic{
+  color: var(--darkGreen);
+  padding: 15vh 5%;
+  background: var(--AuxilaryWhite);
+}
+
+.thematicHead{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 7vh;
+}
+
+.thematicHead h1{
+  font-size: 3vw;
+  font-weight: 600;
+  font-family: "AvenirHeavy";
+  margin-bottom: 3vh;
+}
+
+.thematicHead h1 span{
+  color: var(--grayGreen);
+}
+
+.thematicHead p{
+  font-size: 1.2vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+
+.thematicContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#dprBnt{
+  background: var(--grayGreen);
+}
+
+.thematicContainer button{
+  border: 0;
+  background: var(--darkGreen);
+  color: var(--AuxilaryWhite);
+  margin: 0 1vw;
+  width: 25%;
+  border-radius: .2rem;
+}
+
+.thematicContainer button a{
+  text-decoration: none;
+}
+
+.thematicContainer :hover{
+  background: var(--grayGreen);
+}
+
+
+.thematicContents{
+  padding: 1.5vw;
+  height: 130px;
+}
+
+.thematicContentsHeader{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.thematicContentsHeader img{
+  max-width: 2vw;
+  height: auto;
+  margin-right: 1vw;
+}
+
+.thematicContentsHeader h2{
+  font-size: 1.2vw;
+  font-weight: 600;
+  font-family: "AvenirHeavy";
+}
+
+.thematicContents p{
+  font-size: .86vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  margin-top: 2vh;
+  text-align: left;
+}
+
+
+
+
+/* interestStories styles */
+
+.interestStories{
+  color: var(--darkGreen);
+  padding: 9vh 5%;
+  background: var(--AuxilaryWhite);
+}
+
+.interestStoriesTop{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 17vh;
+}
+
+.interestStoriesTop h1{
+  font-size: 3vw;
+  font-weight: 600;
+  font-family: "AvenirHeavy";
+  margin-bottom: 1vh;
+}
+
+.underline{
+  width: 10%;
+  background: var(--grayGreen);
+  height: .8vh;
+}
+
+.storiesContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.storiesContents{
+  width: 50%;
+  margin: 0 3%;
+}
+
+.storiesContents h2{
+  font-size: 2.5vw;
+  font-weight: 600;
+  font-family: "AvenirHeavy";
+  margin-bottom: 2vh;
+}
+
+.storiesContents p{
+  font-size: 1.2vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  margin-bottom: 2vh;
+  padding-right: 2vw;
+}
+
+.storiesContents button{
+  font-size: .9vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  padding: .8vw 3vw;
+  border: 0;
+  background: var(--grayGreen);
+  color: var(--AuxilaryWhite);
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+
+
+/* hCampaigns styles */
+
+
+
+.hCampaigns{
+  background: url(images/homeWapDesk.png) no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding: 9vh 6% 4vh 6%;
+  display: flex;
+  align-items: center;
+  height: 20vw;
+  margin: 3vh 0 20vh 0;
+}
+
+#hCampaignsContentsOne{
+  visibility: hidden;
+}
+
+.hCampaignsContents{
+  margin-left: 7%;
+}
+
+
+.hCampaigns h5{
+  font-size: .8vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+}
+
+.hCampaigns h1{
+  font-size: 3vw;
+  font-weight: 500;
+  font-family: "AvenirHeavy";
+  margin-bottom: .5vh;
+  color: var(--Lemon);
+}
+
+
+.hCampaigns p{
+  font-size: 1vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  margin-bottom: 5vh;
+}
+
+
+.hCampaigns button{
+  font-size: 1vw;
+  font-weight: 400;
+  font-family: "AvenirLight";
+  border: 0;
+  background: var(--Hoyeton);
+  padding: 1.3vw 5vw;
+  border-radius: .2rem;
+  color: var(--AuxilaryWhite);
+  cursor: pointer;
+}
+
+
+
+/* hPublications styles */
+
+.hPublications{
+  padding: 0vh 6% 4vh 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--darkGreen);
+}
+
+.hPublications h1{
+  font-size: 3vw;
+  font-weight: 500;
+  font-family: "AvenirHeavy";
+}
+
+.hPublications h2{
+  font-size: 1.4vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+}
+
+.hPublications p{
+  font-size: 1.2vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  margin-top: 6vh;
+  text-align: center;
+}
+
+.hPublications button{
+  font-size: 1vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  margin-top: 4vh;
+  border: 0;
+  background: var(--Hoyeton);
+  padding: 1.5vw 4vw;
+  border-radius: .2rem;
+  color: var(--AuxilaryWhite);
+  cursor: pointer;
+}
+
+
+
+
+/* newsletter styles */
+
+
+
+.newsletter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--amiable);
+  margin: 18vh 4%;
+  padding: 8vh 0;
+  color: var(--darkGreen);
+  border-radius: .2rem;
+}
+
+.newsletter h1{
+  font-size: 3vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+}
+
+.newsletter h1 span{
+  font-family: "AvenirHeavy";
+}
+
+.newsletter p{
+  font-size: 1vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  width: 45%;
+  text-align: center;
+  margin-top: 1vh;
+}
+
+.newsletter  form{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 45%;
+  margin-top: 6vh;
+}
+
+.email{
+  border: 0;
+  background: var(--AuxilaryWhite);
+  padding: 1.3vw 1.4vw;
+  width: 65%;
+  border-radius: .2rem;
+  font-size: 1vw;
+  font-weight: 300;
+  font-family: "AvenirRoman";
+}
+
+.email::placeholder{
+  font-size: .8vw;
+}
+
+.submit{
+  border: 0;
+  background: var(--Hoyeton);
+  padding: 1.3vw 1.4vw;
+  width: 25%;
+  border-radius: .2rem;
+  font-size: .8vw;
+  font-weight: 300;
+  font-family: "AvenirRoman";
+  color: var(--AuxilaryWhite);
+  cursor: pointer;
+}
+
+
+/* partners styles */
+
+
+.partners{
+  padding: 5vh 4%;
+}
+
+.partners h1{
+  font-size: 3vw;
+  font-weight: 500;
+  font-family: "AvenirRoman";
+  margin-bottom: 4vh;
+  color: var(--darkGreen);
+  text-align: center;
+}
+
+.partnersLogo{
+  display: flex;
+  align-items: center;
+  overflow: scroll;
+  margin-bottom: 4vh;
+  mix-blend-mode: multiply;
+  position: relative;
+}
+
+.partnersLogo::-webkit-scrollbar{
+  display: none;
+}
+
+.partnersLogo img{
+  max-width: 20vw;
+  height: 17vh;
+  margin-right: 5%;
+  transition: transform 0.5s ease;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: none;
+    margin: 0;
+    padding: 4vh 7vw;
+    position: absolute;
+    width: 86%;
+    height: 92vh;
+    z-index: 2;
+  }
+  
+  header img{
+    max-width: 27vw;
+    height: auto;
+    position: absolute;
+    top: 0;
+    margin-top: 5vh;
+  }
+  
+  
+  nav{
+    display: none;
+  }
+  
+  header  ul {
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 8vh;
+  }
+  
+  header  ul li {
+    margin-left: 2.5rem;
+    margin-bottom: 4vh;
+    font-size: 4vw;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header  ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  header  ul li.resources:hover ul {
+    display: block;
+  }
+  
+  .resources {
+    display: flex;
+    align-items: baseline;
+    justify-content:center;
+  }
+  
+  
+  header  ul li ul {
+    display: none;
+    position: absolute;
+    background-color: var(--grayAuto);
+    border-radius: 0 0 4px 4px;
+    padding: .5vh 0;
+    margin-top: 2.5vh;
+  }
+  
+  header  ul li ul li {
+    display: block;
+    min-width: 160px;
+    padding: 1vh 0;
+    margin: 0;
+    font-size: 2.2vw;
+  }
+  
+  header  ul li ul li a {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  
+  body{
+    color: var(--defaultWhite);
+  }
+  
+  #nav{
+    display: block;
+    border: 0;
+    background: 0;
+    cursor: pointer;
+    margin-right: 4vw;
+  }
+
+  #navAlpha{
+    display: none;
+    border: 0;
+    background: 0;
+    cursor: pointer;
+    margin-right: 4vw;
+  }
+  
+
+  #nav img{
+    max-width: 6vw;
+    height: auto;
+  }
+
+  #navAlpha img{
+    max-width: 6vw;
+    height: auto;
+  }
+  
+  
+  
+  .home{
+    height: 100vh;
+    width: auto;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(images/homeBg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .homeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+  }
+  
+  .homeContainer h1{
+    font-size: 9.08vw;
+    text-align: left;
+    font-weight: 300;
+    font-family: "ArconRegular";
+    margin-bottom: 1.5rem;
+  }
+  
+  .homeContainer h1 span{
+    font-size: 13.5vw;
+    text-align: center;
+    font-weight: 900;
+  }
+  
+  .homeColoredText{
+    color: var(--grayGreen);
+  }
+  
+  .homeContainer p{
+    width: 100%;
+    text-align: left;
+    font-size: 3.2vw;
+    font-weight: 600;
+    font-family: "ArconRegular";
+    margin-bottom: 2rem;
+    padding-right: 0vw;
+  }
+  
+  .homeContainer button{
+    border: 0;
+    padding: .8rem 1rem;
+    background: var(--grayGreen);
+    border-radius: .2rem;
+    cursor: pointer;
+    color: var(--defaultWhite);
+    font-size: 3.5vw;
+    margin-right: 44vw;
+    width: 50%;
+    z-index: 999;
+  }
+  
+  .homeAnnouncement{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 9vh;
+    margin-left: 6vw;
+  }
+  
+  .announceBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 13.5vw 0 0;
+    text-align: left;
+  }
+  
+  
+  .announceBanner h1{
+    font-size: 5vw;
+    font-weight: 900;
+    font-family: "AvenirBlack";
+    color: var(--AuxilaryWhite);
+    margin-right: 0;
+  }
+  
+  .announceBanner p{
+    font-size: 1.3vw;
+    font-weight: 600;
+    font-family: "AvenirBook";
+    color: var(--lightGreen);
+  }
+
+
+
+  .about{
+    display: flex;
+    flex-direction: column;
+    background: var(--AuxilaryWhite);
+    color: var(--darkGreen);
+    padding: 14vh 4vw 7vh 4vw;
+  }
+
+  .aboutUs{
+    background: url(images/aboutUsBg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--AuxilaryWhite);
+    padding: 4vw;
+    border-radius: .1rem;
+  }
+
+  .aboutUs h1{
+    color: var(--lightGreen);
+    font-size: 4vw;
+    font-weight: 900;
+    font-family: "AvenirRoman";
+    margin-bottom: 1.3vh;
+  }
+
+  .aboutUs p{
+    font-size: 2.5vw;
+    font-weight: 400;
+    font-family: "AvenirBook";
+  }
+
+  .aboutUs p span{
+    font-size: 2.5vw;
+    font-weight: 900;
+    font-family: "AvenirRoman";
+    line-height: 4vh;
+  }
+
+  .highlights{
+    margin-top: 4vh;
+  }
+
+  .highlights h1{
+    font-size: 3.5vw;
+    font-weight: 900;
+    font-family:  "AvenirRoman";
+  }
+
+  .highlights h1 span{
+    font-size: 1.8vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    margin-left: 1vw;
+  }
+
+  .highlightContainer{
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .highlightYear{
+    width: 14%;
+    background: var(--darkGreen);
+    color: var(--defaultWhite);
+    padding: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .highlightYear select{
+    border: 0;
+    background: none;
+    color: var(--AuxilaryWhite);
+    font-size: 3.3vw;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  .highlightYear select:focus{
+    outline: none;
+  }
+
+  .highlightYear  img{
+    max-width: 2.2vw;
+    height: auto;
+    margin-left: .9vw;
+  }
+
+
+  .highlightContent{
+    width: 62%;
+    background: var(--grayAuto);
+    color: var(--defaultWhite);
+    padding: 2.5vh;
+  }
+
+  .highlightContent p{
+    font-size: 2vw;
+    font-weight: 400;
+    font-family: "AvenirBook";
+  }
+
+
+  /* Thematic Styles */
+
+
+.thematic{
+  color: var(--darkGreen);
+  padding: 7vh 5%;
+  background: var(--AuxilaryWhite);
+}
+
+.thematicHead{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+
+.thematicHead h1{
+  font-size: 7.2vw;
+  font-weight: 600;
+  font-family: "AvenirHeavy";
+  margin-bottom: 1vh;
+}
+
+.thematicHead h1 span{
+  color: var(--grayGreen);
+}
+
+.thematicHead p{
+  font-size: 3.2vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  margin-bottom: 1vh;
+  text-align: center;
+}
+
+
+.thematicContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#dprBnt{
+  background: var(--grayGreen);
+}
+
+.thematicContainer button{
+  border: 0;
+  background: var(--grayAuto);
+  color: var(--AuxilaryWhite);
+  margin: 2vh 0vw;
+  width: 100%;
+  border-radius: .2rem;
+}
+
+.thematicContainer button a{
+  text-decoration: none;
+}
+
+.thematicContainer :hover{
+  background: var(--grayGreen);
+}
+
+
+.thematicContents{
+  padding:  6vw 3vw;
+  height: auto;
+}
+
+.thematicContentsHeader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.thematicContentsHeader img{
+  max-width: 8vw;
+  height: auto;
+  margin-right: 0;
+  margin-bottom: 2vh;
+}
+
+.thematicContentsHeader h2{
+  font-size: 5vw;
+  font-weight: 600;
+  font-family: "AvenirHeavy";
+}
+
+.thematicContents p{
+  font-size: 3.2vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  margin-top: 1.5vh;
+  text-align: center;
+}
+
+
+
+
+/* interestStories styles */
+
+.interestStories{
+  color: var(--darkGreen);
+  padding: 3vh 5%;
+  background: var(--AuxilaryWhite);
+}
+
+.interestStoriesTop{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+.interestStoriesTop h1{
+  font-size: 5.5vw;
+  font-weight: 600;
+  font-family: "AvenirHeavy";
+  margin-bottom: .5vh;
+}
+
+.underline{
+  width: 10%;
+  background: var(--grayGreen);
+  height: .5vh;
+}
+
+.storiesContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.storiesContents{
+  width: 100%;
+  margin: 5% 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.storiesContents h2{
+  font-size: 5vw;
+  font-weight: 600;
+  font-family: "AvenirHeavy";
+  margin-bottom: 1vh;
+}
+
+.storiesContents p{
+  font-size: 3.2vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  margin-bottom: 2vh;
+  padding-right: 2vw;
+  text-align: center;
+}
+
+.storiesContents button{
+  font-size: 3.2vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  padding: 1.7vw 6vw;
+  border: 0;
+  background: var(--grayGreen);
+  color: var(--AuxilaryWhite);
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+
+
+
+
+/* hCampaigns styles */
+
+
+
+.hCampaigns{
+  background: url(images/homeWapMob.png) no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding: 30vh 6% 4vh 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: baseline;
+  height: 40%;
+  margin: 3vh 0 4vh 0;
+}
+
+#hCampaignsContentsOne{
+  visibility: hidden;
+}
+
+.hCampaignsContents{
+  margin-left: 0%;
+}
+
+
+.hCampaigns h5{
+  font-size: 2.8vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+}
+
+.hCampaigns h1{
+  font-size: 9vw;
+  font-weight: 500;
+  font-family: "AvenirHeavy";
+  margin-bottom: .5vh;
+  color: var(--Lemon);
+}
+
+
+.hCampaigns p{
+  font-size: 3.2vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  margin-bottom: 3vh;
+}
+
+
+.hCampaigns button{
+  font-size: 3vw;
+  font-weight: 400;
+  font-family: "AvenirLight";
+  border: 0;
+  background: var(--Hoyeton);
+  padding: 2.5vw 7vw;
+  border-radius: .2rem;
+  color: var(--AuxilaryWhite);
+  cursor: pointer;
+
+} 
+
+/* hPublications styles */
+
+.hPublications{
+  padding: 5vh 6% 4vh 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--darkGreen);
+}
+
+.hPublications h1{
+  font-size: 9vw;
+  font-weight: 500;
+  font-family: "AvenirHeavy";
+}
+
+.hPublications h2{
+  font-size: 4.5vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+}
+
+.hPublications p{
+  font-size: 3.2vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  margin-top: 3vh;
+  text-align: center;
+}
+
+.hPublications button{
+  font-size: 3vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  margin-top: 4vh;
+  border: 0;
+  background: var(--Hoyeton);
+  padding: 3.5vw 7vw;
+  border-radius: .2rem;
+  color: var(--AuxilaryWhite);
+  cursor: pointer;
+}
+
+
+/* newsletter styles */
+
+
+
+.newsletter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--amiable);
+  margin: 3vh 4%;
+  padding: 6vh 0;
+  color: var(--darkGreen);
+  border-radius: .2rem;
+}
+
+.newsletter h1{
+  font-size: 5vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+}
+
+.newsletter h1 span{
+  font-family: "AvenirHeavy";
+}
+
+.newsletter p{
+  font-size: 2vw;
+  font-weight: 400;
+  font-family: "AvenirRoman";
+  width: 74%;
+  text-align: center;
+  margin-top: 1vh;
+}
+
+.newsletter  form{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 74%;
+  margin-top: 3vh;
+}
+
+.email{
+  border: 0;
+  background: var(--AuxilaryWhite);
+  padding: 2.8vw 2vw;
+  width: 65%;
+  border-radius: .2rem;
+  font-size: 2.6vw;
+  font-weight: 300;
+  font-family: "AvenirRoman";
+}
+
+.email::placeholder{
+  font-size: 2vw;
+}
+
+.submit{
+  border: 0;
+  background: var(--Hoyeton);
+  padding: 2.8vw 2vw;
+  width: 25%;
+  border-radius: .2rem;
+  font-size: 2vw;
+  font-weight: 300;
+  font-family: "AvenirRoman";
+  color: var(--AuxilaryWhite);
+  cursor: pointer;
+}
+
+
+/* partners styles */
+
+
+.partners{
+  padding: 5vh 4%;
+}
+
+.partners h1{
+  font-size: 6vw;
+  font-weight: 500;
+  font-family: "AvenirRoman";
+  margin-bottom: 4vh;
+  color: var(--darkGreen);
+  text-align: center;
+}
+
+.partnersLogo{
+  display: flex;
+  align-items: center;
+  overflow: scroll;
+  margin-bottom: 4vh;
+  mix-blend-mode: multiply;
+  position: relative;
+}
+
+.partnersLogo::-webkit-scrollbar{
+  display: none;
+}
+
+.partnersLogo img{
+  max-width: 18vw;
+  height: auto;
+  margin-right: 5%;
+  transition: transform 0.5s ease;
+}
+
+}
