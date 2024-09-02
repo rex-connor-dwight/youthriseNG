@@ -310,7 +310,7 @@ body{
 
 
 .boardMembers{
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -715,7 +715,7 @@ body{
 
 
   .boardMembers{
-    display: flex;
+    display: none;
     flex-direction: column;
     margin-top: 3vh;
   }
