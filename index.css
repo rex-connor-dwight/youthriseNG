@@ -887,7 +887,7 @@ body{
   }
   
   .homeContainer h1{
-    font-size: 9.08vw;
+    font-size: 8.08vw;
     text-align: left;
     font-weight: 300;
     font-family: "ArconRegular";
@@ -895,7 +895,7 @@ body{
   }
   
   .homeContainer h1 span{
-    font-size: 13.5vw;
+    font-size: 10vw;
     text-align: center;
     font-weight: 900;
   }
@@ -907,7 +907,7 @@ body{
   .homeContainer p{
     width: 100%;
     text-align: left;
-    font-size: 3.2vw;
+    font-size: 3.6vw;
     font-weight: 600;
     font-family: "ArconRegular";
     margin-bottom: 2rem;
@@ -933,8 +933,8 @@ body{
     justify-content: left;
     position: absolute;
     bottom: 0;
-    margin-bottom: 9vh;
-    margin-left: 6vw;
+    margin-bottom: 5vh;
+    margin-left: 6%;
   }
   
   .announceBanner{
@@ -942,21 +942,22 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 13.5vw 0 0;
+    margin: 0 0 0 0;
     text-align: left;
   }
   
   
   .announceBanner h1{
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: 900;
     font-family: "AvenirBlack";
     color: var(--AuxilaryWhite);
-    margin-right: 0;
+    margin-right: 11vw;
+    text-align: center;
   }
   
   .announceBanner p{
-    font-size: 1.3vw;
+    font-size: 1.6vw;
     font-weight: 600;
     font-family: "AvenirBook";
     color: var(--lightGreen);
